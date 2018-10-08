@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GyroControl : MonoBehaviour {
+public class GyroscopeControl : MonoBehaviour {
 
     public GameObject player;
 
@@ -13,7 +13,6 @@ public class GyroControl : MonoBehaviour {
 
     void Update()
     {
-        player.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y, 0);
-
+        player.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y*2.4f, 0);
     }
 }
