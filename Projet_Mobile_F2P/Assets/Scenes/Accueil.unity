@@ -212,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29075003, y: 0.365}
   m_AnchorMax: {x: 0.7106496, y: 0.6365626}
-  m_AnchoredPosition: {x: -0.44013977, y: 0.3999939}
+  m_AnchoredPosition: {x: -0.44015503, y: 0.3999939}
   m_SizeDelta: {x: -0.07998657, y: 4.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761255656
@@ -445,7 +445,7 @@ Prefab:
     - target: {fileID: 224523747425538720, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0000076293945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224523747425538720, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
         type: 2}
@@ -467,7 +467,61 @@ Prefab:
     - target: {fileID: 114698448030398448, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
         type: 2}
       propertyPath: SceneToLoadPlay
-      value: Pause
+      value: Integration_Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132020280447958, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114871644143360208, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de7a326115d72e64c98290f8a546b487,
+        type: 3}
+    - target: {fileID: 114871644143360208, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114871644143360208, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513048480633600, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224976582281431994, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000030517578
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698448030398448, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: SceneToLoad
+      value: SelectLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698448030398448, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: SceneToLoad3
+      value: test_parrainage
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698448030398448, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: SceneToLoad2
+      value: Boutique
+      objectReference: {fileID: 0}
+    - target: {fileID: 114993445738720178, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonOne
+      objectReference: {fileID: 0}
+    - target: {fileID: 114371353821885534, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonTwo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3, type: 2}
@@ -707,6 +761,10 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: -0.27056885
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296926496450634, guid: cb01c4dbbf4112b46950ed053c36cf1b, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb01c4dbbf4112b46950ed053c36cf1b, type: 2}

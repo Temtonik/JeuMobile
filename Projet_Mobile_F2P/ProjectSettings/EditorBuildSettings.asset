@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/test_anim.unity
     guid: ab977db3757b289449b4154975a1e543
+  - enabled: 1
+    path: Assets/Scenes/Integration_Scene.unity
+    guid: 889e548ff7924ac4bb4573008ec79143
+  - enabled: 1
+    path: Assets/Scenes/test_parrainage.unity
+    guid: 46fb9bb15ea36ca4aa550c1ab8da7d0a
+  - enabled: 1
+    path: Assets/Scenes/SelectLevel.unity
+    guid: 683db0394ff3bd849923a8e0a5e07855
   m_configObjects: {}

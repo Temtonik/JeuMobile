@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class AccueilScript : MonoBehaviour {
 
-    public string SceneToLoadPlay;
+    public string SceneToLoad;
+    public string SceneToLoad2;
+    public string SceneToLoad3;
+    public string SceneToLoad4;
+    public string Return;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -18,13 +22,28 @@ public class AccueilScript : MonoBehaviour {
 		
 	}
 
-    public void PlayButton ()
+    public void ButtonOne()
     {
-        SceneManager.LoadScene(SceneToLoadPlay);
+        SceneManager.LoadScene(SceneToLoad);
     }
 
-    public void QuitButton()
+    public void ButtonTwo()
     {
-        Application.Quit();
+        SceneManager.LoadScene(SceneToLoad2);
+    }
+
+    public void ButtonThree()
+    {
+        SceneManager.LoadScene(SceneToLoad3);
+    }
+
+    public void ButtonFour()
+    {
+        SceneManager.LoadScene(SceneToLoad4);
+    }
+
+    public void ReturnButton()
+    {
+        SceneManager.LoadScene(Return);
     }
 }
