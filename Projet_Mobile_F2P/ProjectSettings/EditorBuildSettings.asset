@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Deplacement.unity
     guid: 625e726f4d6c1144eaf463a56b829e28
   - enabled: 1
-    path: Assets/Scenes/Jeu.unity
+    path: Assets/Scenes/Pause.unity
     guid: bcb7c734a0a5f744dab8a4b89213bee5
   - enabled: 1
     path: Assets/Scenes/test_anim.unity
