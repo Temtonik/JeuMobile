@@ -467,7 +467,11 @@ Prefab:
     - target: {fileID: 114698448030398448, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
         type: 2}
       propertyPath: SceneToLoadPlay
-      value: Pause
+      value: Integration_Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1132020280447958, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3, type: 2}
