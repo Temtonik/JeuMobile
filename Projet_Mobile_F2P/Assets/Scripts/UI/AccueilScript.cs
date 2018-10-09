@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class AccueilScript : MonoBehaviour {
 
-    public string SceneToLoad;
-    public string SceneToLoad2;
-    public string SceneToLoad3;
-    public string SceneToLoad4;
+    public GameObject selectLevelCanvas;
+    public GameObject shopCanvas;
+
+    public string Level1;
+    public string Level2;
+    public string Level3;
+    public string Level4;
     public string Return;
 
 
@@ -22,28 +25,40 @@ public class AccueilScript : MonoBehaviour {
 		
 	}
 
-    public void ButtonOne()
+    public void PlayButton()
     {
-        SceneManager.LoadScene(SceneToLoad);
+        selectLevelCanvas.SetActive(true);
     }
 
-    public void ButtonTwo()
+    public void ShopButton()
     {
-        SceneManager.LoadScene(SceneToLoad2);
+        shopCanvas.SetActive(true);
     }
 
-    public void ButtonThree()
-    {
-        SceneManager.LoadScene(SceneToLoad3);
-    }
 
-    public void ButtonFour()
-    {
-        SceneManager.LoadScene(SceneToLoad4);
-    }
 
-    public void ReturnButton()
-    {
-        SceneManager.LoadScene(Return);
-    }
+     public void LevelOne()
+     {
+         SceneManager.LoadScene(Level1);
+     }
+
+     public void LevelTwo()
+     {
+         SceneManager.LoadScene(Level2);
+     }
+
+     public void LevelThree()
+     {
+         SceneManager.LoadScene(Level3);
+     }
+
+         public void LevelFour()
+     {
+         SceneManager.LoadScene(Level4);
+     }
+
+     public void ReturnButton()
+     {
+         SceneManager.LoadScene(Return);
+     }
 }

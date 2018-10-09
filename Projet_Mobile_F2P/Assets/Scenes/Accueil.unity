@@ -516,12 +516,17 @@ Prefab:
     - target: {fileID: 114993445738720178, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ButtonOne
+      value: PlayButton
       objectReference: {fileID: 0}
     - target: {fileID: 114371353821885534, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114698448030398448, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3,
+        type: 2}
+      propertyPath: Play
+      value: SelectLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e90ca7aaf0fc2341a49f6b7113d98d3, type: 2}
