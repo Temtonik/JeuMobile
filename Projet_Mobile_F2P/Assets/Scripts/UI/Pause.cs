@@ -18,19 +18,20 @@ public class Pause : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (PauseActive)
-            {
-                ResumeButton();
-            }
-            else
-            {
-                MenuPause();
-            }
-            
-        }
+
 	}
+
+    public void PauseActivation()
+    {
+        if (PauseActive)
+        {
+            ResumeButton();
+        }
+        else
+        {
+            MenuPause();
+        }
+    }
 
     public void MenuPause()
     {

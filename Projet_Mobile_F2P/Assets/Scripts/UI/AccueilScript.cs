@@ -7,6 +7,7 @@ public class AccueilScript : MonoBehaviour {
 
     public GameObject selectLevelCanvas;
     public GameObject shopCanvas;
+    public GameObject homeCanvas;
 
     public string Level1;
     public string Level2;
@@ -28,6 +29,7 @@ public class AccueilScript : MonoBehaviour {
     public void PlayButton()
     {
         selectLevelCanvas.SetActive(true);
+        homeCanvas.SetActive(false);
     }
 
     public void ShopButton()
