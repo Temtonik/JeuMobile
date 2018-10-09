@@ -28,8 +28,7 @@ public class SwapMove : MonoBehaviour
 
             if (hit.collider.CompareTag("Wall"))
             {
-                Debug.Log("Wall");
-                
+                Debug.Log("Wall");                
             }
         }
     }
