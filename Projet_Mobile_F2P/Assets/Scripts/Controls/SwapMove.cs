@@ -10,6 +10,7 @@ public class SwapMove : MonoBehaviour
     private Vector3 lp;   //Last touch position
     private float dragDistance;  //minimum distance for a swipe to be registered
     private float rayDistance = 5f;
+    public bool is_Moving, is_Standing;
 
     // Use this for initialization
     void Start()
@@ -56,6 +57,7 @@ public class SwapMove : MonoBehaviour
                     if (lp.y > fp.y)  //If the movement was up
                     {
                         Debug.Log("Move");
+                        is_Moving = true;
                         if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
                         {
                             Debug.Log("Angle1");
@@ -80,8 +82,11 @@ public class SwapMove : MonoBehaviour
                 }
                 else
                 {   //Down swipe
+                    is_Standing = true;
                     Debug.Log("Don't Move");
                 }
+                is_Moving = false;
+                is_Standing = false;
             }
         }
     }
