@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwapMove : MonoBehaviour {
 
+    public GameObject Player;
     private Vector3 fp;   //First touch position
     private Vector3 lp;   //Last touch position
     private float dragDistance;  //minimum distance for a swipe to be registered
@@ -37,8 +38,26 @@ public class SwapMove : MonoBehaviour {
                 {
                     if (lp.y > fp.y)  //If the movement was up
                     {   //Up swipe
-                        Debug.Log("Move");
-
+                        if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
+                        {
+                            Debug.Log("Angle1");
+                            Player.transform.position = new Vector3 (Player.transform.position.x , Player.transform.position.y, Player.transform.position.z+3.0f);
+                        }
+                        else if (Player.transform.rotation.eulerAngles.y >= 60 && Player.transform.rotation.eulerAngles.y <= 110)
+                        {
+                            Debug.Log("Angle2");
+                            Player.transform.position = new Vector3(Player.transform.position.x+3.0f, Player.transform.position.y, Player.transform.position.z);
+                        }
+                        else if (Player.transform.rotation.eulerAngles.y >= 150 && Player.transform.rotation.eulerAngles.y <= 210)
+                        {
+                            Debug.Log("Angle3");
+                            Player.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z-3.0f);
+                        }
+                        else if (Player.transform.rotation.eulerAngles.y >= 240 && Player.transform.rotation.eulerAngles.y <= 300)
+                        {
+                            Debug.Log("Angle4");
+                            Player.transform.position = new Vector3(Player.transform.position.x-3.0f, Player.transform.position.y, Player.transform.position.z);
+                        }
                     }
                     else
                     {   //Down swipe
