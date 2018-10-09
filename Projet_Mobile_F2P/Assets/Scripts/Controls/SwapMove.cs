@@ -38,7 +38,6 @@ public class SwapMove : MonoBehaviour {
                     if (lp.y > fp.y)  //If the movement was up
                     {   //Up swipe
                         Debug.Log("Move");
-                        if()
 
                     }
                     else
