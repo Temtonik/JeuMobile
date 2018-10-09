@@ -24,6 +24,7 @@ public class FinishLevel : MonoBehaviour {
         if (other.tag == "Player")
         {
             victoryCanvas.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
