@@ -14,6 +14,7 @@ public class SwapMove : MonoBehaviour
     private bool inMovement = false;
     private Vector3 newPos = new Vector3();
     public float MoveSpeed;
+    public SoundManager my_SM;
 
     // Use this for initialization
     void Start()
@@ -64,6 +65,7 @@ public class SwapMove : MonoBehaviour
                         {
                             Debug.Log("Move");
                             is_Moving = true;
+                            my_SM.PlaySwipeSound();
 
                             if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
                             {
@@ -93,6 +95,7 @@ public class SwapMove : MonoBehaviour
                 {   //Down swipe
                     is_Standing = true;
                     Debug.Log("Don't Move");
+                    my_SM.PlayStaySound();
                 }
 
                 is_Moving = false;
