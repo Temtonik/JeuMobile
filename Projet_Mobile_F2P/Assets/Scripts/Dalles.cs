@@ -27,7 +27,7 @@ public class Dalles : MonoBehaviour {
     void OnTriggerStay(Collider other)
     {
         Debug.Log("Je suis dans le trigger");
-        if (other.gameObject.tag == "Player" )
+        if (other.gameObject.tag == "Player" && my_SwapMove.is_Standing)
         {
             Debug.Log("Je suis dans la fonction");
             activatedPress += 1;

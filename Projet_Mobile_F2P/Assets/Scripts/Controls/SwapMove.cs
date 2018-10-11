@@ -28,9 +28,10 @@ public class SwapMove : MonoBehaviour
     {
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
+
         if (Physics.Raycast(ray, out hit, rayDistance) && !inMovement)
         {
-            MoveSwap();
+            MoveSwapUp();
         }
         else if (inMovement)
         {
@@ -38,12 +39,13 @@ public class SwapMove : MonoBehaviour
             if (Player.transform.position == newPos)
             {
                 inMovement = false;
-                is_Moving = false;
             }
         }
+
+        MoveSwapDown();
     }
 
-    public void MoveSwap()
+    public void MoveSwapUp()
     {
         if (Input.touchCount == 1) // user is touching the screen with a single touch
         {
@@ -59,49 +61,73 @@ public class SwapMove : MonoBehaviour
                 }
                 else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
                 {
-                    lp = touch.position;  //last touch position.
+                    lp = touch.position;  //last touch position.                  
+                }
 
-                    if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
+            if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
+            {
+                if (lp.y > fp.y)  //If the movement was up
+                {
+                    Debug.Log("Move");
+                    is_Moving = true;
+                    my_SM.PlaySwipeSound();
+
+                    if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
                     {
-                        if (lp.y > fp.y)  //If the movement was up
-                        {
-                            Debug.Log("Move");
-                            is_Moving = true;
-                            my_SM.PlaySwipeSound();
-
-                            if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
-                            {
-                                Debug.Log("Angle1");
-                                newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + MoveValue);                                
-                            }
-                            else if (Player.transform.rotation.eulerAngles.y >= 60 && Player.transform.rotation.eulerAngles.y <= 110)
-                            {
-                                Debug.Log("Angle2");
-                                newPos = new Vector3(Player.transform.position.x + MoveValue, Player.transform.position.y, Player.transform.position.z);
-                            }
-                            else if (Player.transform.rotation.eulerAngles.y >= 150 && Player.transform.rotation.eulerAngles.y <= 210)
-                            {
-                                Debug.Log("Angle3");
-                                newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - MoveValue);                               
-                            }
-                            else if (Player.transform.rotation.eulerAngles.y >= 240 && Player.transform.rotation.eulerAngles.y <= 300)
-                            {
-                                Debug.Log("Angle4");
-                                newPos = new Vector3(Player.transform.position.x - MoveValue, Player.transform.position.y, Player.transform.position.z);                               
-                            }
-                            inMovement = true;
-                        }
-
-                        else
-                        {   //Down swipe
-                            is_Standing = true;
-                            Debug.Log("Don't Move");
-                            my_SM.PlayStaySound();
-                        }
+                        Debug.Log("Angle1");
+                        newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + MoveValue);
+                    }
+                    else if (Player.transform.rotation.eulerAngles.y >= 60 && Player.transform.rotation.eulerAngles.y <= 110)
+                    {
+                        Debug.Log("Angle2");
+                        newPos = new Vector3(Player.transform.position.x + MoveValue, Player.transform.position.y, Player.transform.position.z);
+                    }
+                    else if (Player.transform.rotation.eulerAngles.y >= 150 && Player.transform.rotation.eulerAngles.y <= 210)
+                    {
+                        Debug.Log("Angle3");
+                        newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - MoveValue);
+                    }
+                    else if (Player.transform.rotation.eulerAngles.y >= 240 && Player.transform.rotation.eulerAngles.y <= 300)
+                    {
+                        Debug.Log("Angle4");
+                        newPos = new Vector3(Player.transform.position.x - MoveValue, Player.transform.position.y, Player.transform.position.z);
                     }
 
-                is_Standing = false;
+                    inMovement = true;
                 }
+            }
         }    
+
+    }
+
+    public void MoveSwapDown()
+    {
+        if (Input.touchCount == 1) // user is touching the screen with a single touch
+        {
+            Touch touch = Input.GetTouch(0); // get the touch
+            if (touch.phase == TouchPhase.Began) //check for the first touch
+            {
+                fp = touch.position;
+                lp = touch.position;
+            }
+            else if (touch.phase == TouchPhase.Moved) // update the last position based on where they moved
+            {
+                lp = touch.position;
+            }
+            else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
+            {
+                lp = touch.position;  //last touch position.                  
+            }
+
+            if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
+            {
+                if (lp.y < fp.y)  //If the movement was Down
+                {
+                    is_Standing = true;
+                    Debug.Log("Don't Move");
+                    my_SM.PlayStaySound();
+                }
+            }
+        }
     }
 }
