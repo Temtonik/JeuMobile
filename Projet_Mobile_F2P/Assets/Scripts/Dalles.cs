@@ -24,21 +24,27 @@ public class Dalles : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player" && my_SwapMove.is_Standing == true)
+        Debug.Log("Je suis dans le trigger");
+        if (other.gameObject.tag == "Player" )
         {
+            Debug.Log("Je suis dans la fonction");
             activatedPress += 1;
             triggerPress.SetActive(false);
             feedbackPress.SetActive(true);
-            
-            if (activatedPress == numberPressInLevel)
-            {
-                door.SetActive(false);
-                triggerRaycast.SetActive(true);
-            }
+
+            DoorActive();
         }
     }
 
+    void DoorActive()
+    {
+        if (activatedPress == numberPressInLevel)
+        {
+            door.SetActive(false);
+            triggerRaycast.SetActive(true);
+        }
+    }
 
 }
