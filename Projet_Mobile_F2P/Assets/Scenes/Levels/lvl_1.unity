@@ -995,6 +995,35 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25701dd3e07224b408a5297dc8f21c1e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &581340531 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114028124703312938, guid: 25701dd3e07224b408a5297dc8f21c1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 581340530}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &581340532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1200670781265780, guid: 25701dd3e07224b408a5297dc8f21c1e,
+    type: 2}
+  m_PrefabInternal: {fileID: 581340530}
+--- !u!114 &581340533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581340532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1772877ee335b429567e059ef8a27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxStamina: 10
+  currentStamina: 0
+  FirstStarNeedsStamina: 1
+  SecondStarNeedsStamina: 2
+  ThirdStarNeedsStamina: 3
+  my_SwapMove: {fileID: 705776279}
+  StaminaImg: {fileID: 581340531}
 --- !u!1001 &639185998
 Prefab:
   m_ObjectHideFlags: 0
