@@ -15,6 +15,7 @@ public class SwapMove : MonoBehaviour
     private Vector3 newPos = new Vector3();
     public float MoveSpeed;
     public SoundManager my_SM;
+    public float MoveValue;
 
     // Use this for initialization
     void Start()
@@ -70,22 +71,22 @@ public class SwapMove : MonoBehaviour
                             if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
                             {
                                 Debug.Log("Angle1");
-                                newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + 3.0f);                                
+                                newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + MoveValue);                                
                             }
                             else if (Player.transform.rotation.eulerAngles.y >= 60 && Player.transform.rotation.eulerAngles.y <= 110)
                             {
                                 Debug.Log("Angle2");
-                                newPos = new Vector3(Player.transform.position.x + 3.0f, Player.transform.position.y, Player.transform.position.z);
+                                newPos = new Vector3(Player.transform.position.x + MoveValue, Player.transform.position.y, Player.transform.position.z);
                             }
                             else if (Player.transform.rotation.eulerAngles.y >= 150 && Player.transform.rotation.eulerAngles.y <= 210)
                             {
                                 Debug.Log("Angle3");
-                                newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - 3.0f);                               
+                                newPos = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z - MoveValue);                               
                             }
                             else if (Player.transform.rotation.eulerAngles.y >= 240 && Player.transform.rotation.eulerAngles.y <= 300)
                             {
                                 Debug.Log("Angle4");
-                                newPos = new Vector3(Player.transform.position.x - 3.0f, Player.transform.position.y, Player.transform.position.z);                               
+                                newPos = new Vector3(Player.transform.position.x - MoveValue, Player.transform.position.y, Player.transform.position.z);                               
                             }
                             inMovement = true;
                         }
