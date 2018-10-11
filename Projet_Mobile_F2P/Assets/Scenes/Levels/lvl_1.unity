@@ -1801,6 +1801,11 @@ Prefab:
       propertyPath: my_SM
       value: 
       objectReference: {fileID: 544954844}
+    - target: {fileID: 114219192975419172, guid: 8925d4c40305c984baea3ddd7ef3d2c2,
+        type: 2}
+      propertyPath: my_StaminaManager
+      value: 
+      objectReference: {fileID: 581340533}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8925d4c40305c984baea3ddd7ef3d2c2, type: 2}
   m_IsPrefabAsset: 0

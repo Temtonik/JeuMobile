@@ -16,6 +16,7 @@ public class SwapMove : MonoBehaviour
     public float MoveSpeed;
     public SoundManager my_SM;
     public float MoveValue;
+    public StaminaManager my_StaminaManager;
 
     // Use this for initialization
     void Start()
@@ -39,6 +40,7 @@ public class SwapMove : MonoBehaviour
             if (Player.transform.position == newPos)
             {
                 inMovement = false;
+                my_StaminaManager.UpdateStamina();
             }
         }
 
@@ -61,8 +63,8 @@ public class SwapMove : MonoBehaviour
                 }
                 else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
                 {
-                    lp = touch.position;  //last touch position.                  
-                }
+                    lp = touch.position;  //last touch position.
+            }
 
             if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
             {
@@ -116,14 +118,15 @@ public class SwapMove : MonoBehaviour
             }
             else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
             {
-                lp = touch.position;  //last touch position.                  
+                lp = touch.position;  //last touch position.  
             }
 
             if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
             {
-                if (lp.y < fp.y)  //If the movement was Down
+                if (lp.y < fp.y && !is_Standing)  //If the movement was Down
                 {
                     is_Standing = true;
+                    my_StaminaManager.UpdateStamina();
                     Debug.Log("Don't Move");
                     my_SM.PlayStaySound();
                 }

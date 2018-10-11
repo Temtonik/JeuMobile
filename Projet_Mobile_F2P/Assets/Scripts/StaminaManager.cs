@@ -22,16 +22,18 @@ public class StaminaManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
 		if(my_SwapMove.is_Moving || my_SwapMove.is_Standing)
         {
             UpdateStamina();
         }
+        */
 
 	}
 
-    void UpdateStamina()
+    public void UpdateStamina()
     {
-        my_SwapMove.is_Moving = false;
+        //my_SwapMove.is_Moving = false;
         my_SwapMove.is_Standing = false;
         currentStamina--;
         ShowStamina();
