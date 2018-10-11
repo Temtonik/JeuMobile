@@ -89,14 +89,14 @@ public class SwapMove : MonoBehaviour
                             }
                             inMovement = true;
                         }
-                    }
 
-                else
-                {   //Down swipe
-                    is_Standing = true;
-                    Debug.Log("Don't Move");
-                    my_SM.PlayStaySound();
-                }
+                        else
+                        {   //Down swipe
+                            is_Standing = true;
+                            Debug.Log("Don't Move");
+                            my_SM.PlayStaySound();
+                        }
+                    }
 
                 is_Moving = false;
                 is_Standing = false;
