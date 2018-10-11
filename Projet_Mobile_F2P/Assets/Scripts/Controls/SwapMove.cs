@@ -38,6 +38,7 @@ public class SwapMove : MonoBehaviour
             if (Player.transform.position == newPos)
             {
                 inMovement = false;
+                is_Moving = false;
             }
         }
     }
@@ -99,7 +100,6 @@ public class SwapMove : MonoBehaviour
                         }
                     }
 
-                is_Moving = false;
                 is_Standing = false;
                 }
         }    
