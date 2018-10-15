@@ -33,7 +33,7 @@ public class StaminaManager : MonoBehaviour {
 
     public void UpdateStamina()
     {
-        //my_SwapMove.is_Moving = false;
+        my_SwapMove.is_Moving = false;
         my_SwapMove.is_Standing = false;
         currentStamina--;
         ShowStamina();

@@ -18,6 +18,7 @@ public class SwapMove : MonoBehaviour
 
     public bool is_Moving, is_Standing;
     private bool inMovement = false;
+    private bool UseStamina = false;
 
     public SoundManager my_SM;
     public StaminaManager my_StaminaManager;
@@ -32,6 +33,7 @@ public class SwapMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MoveSwapDown();
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
@@ -47,8 +49,11 @@ public class SwapMove : MonoBehaviour
                 inMovement = false;
             }
         }
-
-        MoveSwapDown();
+        if (UseStamina == true && (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance))
+        {
+            my_StaminaManager.UpdateStamina();
+            UseStamina = false;
+        }
     }
 
     public void MoveSwapUp()
@@ -123,7 +128,7 @@ public class SwapMove : MonoBehaviour
             else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
             {
                 lp = touch.position;  //last touch position.
-                my_StaminaManager.UpdateStamina();
+                UseStamina = true;
             }
 
             if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
