@@ -6,17 +6,22 @@ public class SwapMove : MonoBehaviour
 {
 
     public GameObject Player;
+
     private Vector3 fp;   //First touch position
     private Vector3 lp;   //Last touch position
+    private Vector3 newPos = new Vector3();
+
     private float dragDistance;  //minimum distance for a swipe to be registered
     public float rayDistance;
+    public float MoveSpeed;
+    public float MoveValue;
+
     public bool is_Moving, is_Standing;
     private bool inMovement = false;
-    private Vector3 newPos = new Vector3();
-    public float MoveSpeed;
+
     public SoundManager my_SM;
-    public float MoveValue;
     public StaminaManager my_StaminaManager;
+
 
     // Use this for initialization
     void Start()
@@ -40,7 +45,6 @@ public class SwapMove : MonoBehaviour
             if (Player.transform.position == newPos)
             {
                 inMovement = false;
-                my_StaminaManager.UpdateStamina();
             }
         }
 
@@ -52,18 +56,18 @@ public class SwapMove : MonoBehaviour
         if (Input.touchCount == 1) // user is touching the screen with a single touch
         {
             Touch touch = Input.GetTouch(0); // get the touch
-                if (touch.phase == TouchPhase.Began) //check for the first touch
-                {
-                    fp = touch.position;
-                    lp = touch.position;
-                }
-                else if (touch.phase == TouchPhase.Moved) // update the last position based on where they moved
-                {
-                    lp = touch.position;
-                }
-                else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
-                {
-                    lp = touch.position;  //last touch position.
+            if (touch.phase == TouchPhase.Began) //check for the first touch
+            {
+                fp = touch.position;
+                lp = touch.position;
+            }
+            else if (touch.phase == TouchPhase.Moved) // update the last position based on where they moved
+            {
+                lp = touch.position;
+            }
+            else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
+            {
+                lp = touch.position;  //last touch position.
             }
 
             if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
@@ -98,7 +102,7 @@ public class SwapMove : MonoBehaviour
                     inMovement = true;
                 }
             }
-        }    
+        }
 
     }
 
@@ -118,16 +122,16 @@ public class SwapMove : MonoBehaviour
             }
             else if (touch.phase == TouchPhase.Ended) //check if the finger is removed from the screen
             {
-                lp = touch.position;  //last touch position.  
+                lp = touch.position;  //last touch position.
+                my_StaminaManager.UpdateStamina();
             }
 
             if (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance)
             {
                 if (lp.y < fp.y && !is_Standing)  //If the movement was Down
                 {
-                    is_Standing = true;
-                    my_StaminaManager.UpdateStamina();
                     Debug.Log("Don't Move");
+                    is_Standing = true;
                     my_SM.PlayStaySound();
                 }
             }

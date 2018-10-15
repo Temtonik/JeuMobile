@@ -1027,11 +1027,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1657834945848182}
   rayDistance: 2
+  MoveSpeed: 3
+  MoveValue: 1
   is_Moving: 0
   is_Standing: 0
-  MoveSpeed: 3
   my_SM: {fileID: 0}
-  MoveValue: 1
+  my_StaminaManager: {fileID: 0}
 --- !u!114 &114571136937704114
 MonoBehaviour:
   m_ObjectHideFlags: 1
