@@ -16,7 +16,7 @@ public class SwapMove : MonoBehaviour
     public float MoveSpeed;
     public float MoveValue;
 
-    public bool is_Moving, is_Standing;
+    public bool is_Moving, is_Standing, is_acting;
     private bool inMovement = false;
     private bool UseStamina = false;
 
@@ -49,10 +49,11 @@ public class SwapMove : MonoBehaviour
                 inMovement = false;
             }
         }
-        if (UseStamina == true && (Mathf.Abs(lp.x - fp.x) > dragDistance || Mathf.Abs(lp.y - fp.y) > dragDistance))
+        if (UseStamina == true && is_acting == true)
         {
             my_StaminaManager.UpdateStamina();
             UseStamina = false;
+            is_acting = false;
         }
     }
 
@@ -81,6 +82,7 @@ public class SwapMove : MonoBehaviour
                 {
                     Debug.Log("Move");
                     is_Moving = true;
+                    is_acting = true;
                     my_SM.PlaySwipeSound();
 
                     if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
@@ -137,6 +139,7 @@ public class SwapMove : MonoBehaviour
                 {
                     Debug.Log("Don't Move");
                     is_Standing = true;
+                    is_acting = true;
                     my_SM.PlayStaySound();
                 }
             }
