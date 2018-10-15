@@ -793,8 +793,7 @@ MonoBehaviour:
   SecondStarNeedsStamina: 2
   ThirdStarNeedsStamina: 3
   my_SwapMove: {fileID: 0}
-  StaminaImg: {fileID: 114028124703312938, guid: 25701dd3e07224b408a5297dc8f21c1e,
-    type: 2}
+  StaminaImg: {fileID: 114484585124911218}
 --- !u!114 &114484585124911218
 MonoBehaviour:
   m_ObjectHideFlags: 1
