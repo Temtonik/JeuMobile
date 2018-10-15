@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PiegeActivation : MonoBehaviour {
 
-    public GameObject electricTrapAnim;
+    //public GameObject electricTrapAnim;
     public StaminaManager my_StaminaManager;
 
     // Use this for initialization
@@ -21,8 +21,10 @@ public class PiegeActivation : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player") 
         {
-            electricTrapAnim.SetActive(true);
+            //electricTrapAnim.SetActive(true);
             my_StaminaManager.currentStamina -= 3;
+            my_StaminaManager.ShowStamina();
+            my_StaminaManager.CheckActualStamina();
         }
     }
 }

@@ -40,12 +40,12 @@ public class StaminaManager : MonoBehaviour {
         CheckActualStamina();
     }
 
-    void ShowStamina()
+    public void ShowStamina()
     {
         StaminaImg.fillAmount = (currentStamina / MaxStamina);
     }
 
-    void CheckActualStamina()
+    public void CheckActualStamina()
     {
         if(currentStamina <= 0)
         {
