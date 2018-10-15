@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 114571136937704114}
   - component: {fileID: 114219192975419172}
   m_Layer: 0
-  m_Name: Robot_version_4
+  m_Name: Robot_version_4.1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1032,6 +1032,7 @@ MonoBehaviour:
   MoveSpeed: 3
   my_SM: {fileID: 0}
   MoveValue: 1
+  my_StaminaManager: {fileID: 0}
 --- !u!114 &114571136937704114
 MonoBehaviour:
   m_ObjectHideFlags: 1
