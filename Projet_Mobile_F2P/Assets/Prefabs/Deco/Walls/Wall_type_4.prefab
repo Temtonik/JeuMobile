@@ -103,7 +103,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4320625982609158}
-  - component: {fileID: 65189126702290542}
   - component: {fileID: 205157246829166100}
   m_Layer: 0
   m_Name: decorative_wall_4_no_computer (1)
@@ -145,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1535599678395194}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.139, y: 0.078, z: 2}
+  m_LocalPosition: {x: -4.933, y: 1.3986499, z: 1.67}
   m_LocalScale: {x: 0.25079632, y: 0.3736032, z: 0.28945}
   m_Children:
   - {fileID: 4985894935941112}
@@ -371,18 +370,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1308394636669212}
   m_Mesh: {fileID: 4300000, guid: bf457f6799881e747bbd9e01d6dc3ef2, type: 3}
---- !u!65 &65189126702290542
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1761173544221290}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4, y: 4, z: 0.29866624}
-  m_Center: {x: 0, y: 2, z: 0.14933297}
 --- !u!205 &205157246829166100
 LODGroup:
   m_ObjectHideFlags: 1
