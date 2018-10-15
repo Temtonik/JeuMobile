@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class StaminaManager : MonoBehaviour {
 
     public float MaxStamina;
-    [SerializeField] private float currentStamina;
+    public float currentStamina;
     public int FirstStarNeedsStamina;
     public int SecondStarNeedsStamina;
     public int ThirdStarNeedsStamina;
