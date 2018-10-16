@@ -11,8 +11,10 @@ public class LaserScript : MonoBehaviour {
     private float startTimer = 0.2f;
     public float currentTimer;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject pauseButton;
+
+    // Use this for initialization
+    void Start () {
 
         //Au lancement de la scène la valeur est à 1
         actionBeforeLaserActive = 1;
@@ -65,13 +67,7 @@ void Update () {
     {
         yield return new WaitForSeconds(0.3f);
         canvasDefeat.SetActive(true);
+        pauseButton.SetActive(false);
         Time.timeScale = 0;
-    }
-
-    IEnumerator WaitForActive()
-    {
-        yield return new WaitForSeconds(2f);
-        laserAnim.SetActive(true);
-        my_BC.isTrigger = true;
     }
 }

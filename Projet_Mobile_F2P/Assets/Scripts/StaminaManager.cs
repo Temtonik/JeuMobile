@@ -14,6 +14,7 @@ public class StaminaManager : MonoBehaviour {
     public SwapMove my_SwapMove;
     public Image StaminaImg;
     public GameObject Defeate;
+    public GameObject pauseButton;
 
 
 	// Use this for initialization
@@ -54,6 +55,7 @@ public class StaminaManager : MonoBehaviour {
             // play anim
             Time.timeScale = 0;
             Defeate.SetActive(true);
+            pauseButton.SetActive(false);
         }
         if(currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {
