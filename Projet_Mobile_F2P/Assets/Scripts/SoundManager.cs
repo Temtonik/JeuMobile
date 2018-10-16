@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour {
     public AudioClip Snd_Swipe;
     public AudioClip Snd_Stay;
     public AudioClip Snd_Die;
+    public AudioClip Snd_Laser;
+    public AudioClip Snd_Trap;
 
     // Use this for initialization
     void Start () {
@@ -24,18 +26,35 @@ public class SoundManager : MonoBehaviour {
 
     public void PlaySwipeSound()
     {
+        AudioSource.loop = false;
         AudioSource.clip = Snd_Swipe;
         AudioSource.Play();
     }
     public void PlayStaySound()
     {
+        AudioSource.loop = false;
         AudioSource.clip = Snd_Stay;
         AudioSource.Play();
     }
 
     public void PlayDieSound()
     {
+        AudioSource.loop = false;
         AudioSource.clip = Snd_Die;
         AudioSource.Play();
+    }
+
+    public void PlayLaserSound()
+    {
+        AudioSource.clip = Snd_Laser;
+        AudioSource.Play();
+        AudioSource.loop = true;
+    }
+
+    public void PlayTrapSound()
+    {
+        AudioSource.clip = Snd_Trap;
+        AudioSource.Play();
+        AudioSource.loop = true;
     }
 }
