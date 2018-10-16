@@ -298,7 +298,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1657834945848182, guid: 8925d4c40305c984baea3ddd7ef3d2c2, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4774040747870334, guid: 8925d4c40305c984baea3ddd7ef3d2c2, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2262,6 +2262,10 @@ Prefab:
     - target: {fileID: 4505042970225962, guid: e264502ac1e958e44806fc5348e99be8, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522021120562394, guid: e264502ac1e958e44806fc5348e99be8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e264502ac1e958e44806fc5348e99be8, type: 2}
@@ -4659,6 +4663,11 @@ Prefab:
       propertyPath: my_SwapMove
       value: 
       objectReference: {fileID: 705776279}
+    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: MaxStamina
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0

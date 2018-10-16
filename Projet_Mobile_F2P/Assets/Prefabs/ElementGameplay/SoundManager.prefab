@@ -149,4 +149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Snd_Swipe: {fileID: 8300000, guid: 4eeb166ce956e5b45a3bb5df408ad64d, type: 3}
   Snd_Stay: {fileID: 8300000, guid: 71cc10046568bac42903aee2bfc619de, type: 3}
-  Snd_Die: {fileID: 0}
+  Snd_Die: {fileID: 8300000, guid: c19b2cb6474b8c2459e8d48ee678d576, type: 3}
+  Snd_Laser: {fileID: 8300000, guid: 54da07e71c0519344b87841e0c286634, type: 3}
+  Snd_Trap: {fileID: 8300000, guid: 4d140adf428f45e4c89ba43af7245c49, type: 3}
