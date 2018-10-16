@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class StaminaManager : MonoBehaviour {
 
     public float MaxStamina;
-    [SerializeField] private float currentStamina;
+    public float currentStamina;
     public int FirstStarNeedsStamina;
     public int SecondStarNeedsStamina;
     public int ThirdStarNeedsStamina;
@@ -22,26 +22,30 @@ public class StaminaManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
 		if(my_SwapMove.is_Moving || my_SwapMove.is_Standing)
         {
             UpdateStamina();
         }
+        */
 
 	}
 
-    void UpdateStamina()
+    public void UpdateStamina()
     {
+        my_SwapMove.is_Moving = false;
+        my_SwapMove.is_Standing = false;
         currentStamina--;
         ShowStamina();
         CheckActualStamina();
     }
 
-    void ShowStamina()
+    public void ShowStamina()
     {
         StaminaImg.fillAmount = (currentStamina / MaxStamina);
     }
 
-    void CheckActualStamina()
+    public void CheckActualStamina()
     {
         if(currentStamina <= 0)
         {

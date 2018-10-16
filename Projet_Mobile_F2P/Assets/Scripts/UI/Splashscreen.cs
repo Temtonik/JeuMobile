@@ -7,15 +7,13 @@ using UnityEngine.UI;
 public class Splashscreen : MonoBehaviour {
 
     public GameObject title;
-    public GameObject playButton;
-    public GameObject shopButton;
+    public GameObject Main_Menu;
     public GameObject logo;
 
 	// Use this for initialization
 	void Start () {
         title.SetActive(false);
-        playButton.SetActive(false);
-        shopButton.SetActive(false);
+        Main_Menu.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -29,8 +27,7 @@ public class Splashscreen : MonoBehaviour {
     public void LogoAway()
     {
         title.SetActive(true);
-        playButton.SetActive(true);
-        shopButton.SetActive(true);
+        Main_Menu.SetActive(true);
         logo.SetActive(false);
     }
 }
