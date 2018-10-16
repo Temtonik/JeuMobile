@@ -63,4 +63,9 @@ public class AccueilScript : MonoBehaviour {
      {
          SceneManager.LoadScene(Return);
      }
+
+    public void ParrainageButton()
+    {
+        SceneManager.LoadScene("Parrainage");
+    }
 }

@@ -2086,7 +2086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.002965521, y: 0.38340577}
   m_AnchorMax: {x: 0.92042196, y: 0.52366257}
-  m_AnchoredPosition: {x: 1.8999939, y: 0}
+  m_AnchoredPosition: {x: 1.8999634, y: 0}
   m_SizeDelta: {x: 3.7, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &927011225
@@ -2337,7 +2337,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1063160092}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1858276901}
+        m_MethodName: ParrainageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1063160092
@@ -3057,7 +3068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7916663}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 5.61, y: -0.56885}
+  m_AnchoredPosition: {x: 5.6099854, y: -0.56884766}
   m_SizeDelta: {x: 11.22, y: 1.1377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319461089
@@ -3216,7 +3227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1393174057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5597,7 +5608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2132798759
 RectTransform:
   m_ObjectHideFlags: 0
