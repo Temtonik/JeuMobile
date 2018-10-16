@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: b04eac02705959645841a95cca717671
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Optimus
+  fontNames:
+  - Optimus
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5b4b1af3a4b2df44dbbf9fe805b4b6c3, type: 3}
+  - {fileID: 12800000, guid: 116bca34d83859c4b8516b5c43c5fa95, type: 3}
+  - {fileID: 12800000, guid: 6402fe443b3a4c245a2eca90b03b1680, type: 3}
+  - {fileID: 12800000, guid: 15ba79b4185b0af4eba79f842cfab667, type: 3}
+  - {fileID: 12800000, guid: 7bf734c59e5ee1f4c8c7b59dd9c9f8f8, type: 3}
+  - {fileID: 12800000, guid: 78bb4d9cdc304ac489cc35824d99ef29, type: 3}
+  - {fileID: 12800000, guid: 69f8b65d7847a024a85ecfbd9556c8cc, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

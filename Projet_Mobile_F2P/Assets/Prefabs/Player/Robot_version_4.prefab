@@ -1026,7 +1026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1657834945848182}
-  rayDistance: 2
+  rayDistance: 1.5
   MoveSpeed: 3
   MoveValue: 1
   is_Moving: 0
