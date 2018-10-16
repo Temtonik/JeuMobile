@@ -43,11 +43,8 @@ public class Dalles : MonoBehaviour {
         {
             for (int i = 0; i <= door.Length; i++)
             {
-                for (int j = 0; j <= PassageCollidersDoor.Length; j++)
-                {
                     door[i].SetActive(false);
-                    PassageCollidersDoor[j].SetActive(true);
-                }
+                    PassageCollidersDoor[i].SetActive(true);
             }
         }
     }
