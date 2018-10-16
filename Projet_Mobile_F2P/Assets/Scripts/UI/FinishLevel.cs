@@ -9,9 +9,10 @@ public class FinishLevel : MonoBehaviour {
     public string SceneToLoadQuit;
 
     public GameObject victoryCanvas;
+    public GameObject pauseButton;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -25,6 +26,7 @@ public class FinishLevel : MonoBehaviour {
         if (other.tag == "Player")
         {
             victoryCanvas.SetActive(true);
+            pauseButton.SetActive(false);
             Time.timeScale = 0f;
         }
     }
