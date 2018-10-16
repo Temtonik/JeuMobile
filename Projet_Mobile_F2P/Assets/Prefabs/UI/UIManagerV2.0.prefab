@@ -284,7 +284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224304558160048294}
   m_Layer: 5
-  m_Name: End_Menu
+  m_Name: Victory_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1772877ee335b429567e059ef8a27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxStamina: 10
+  MaxStamina: 11
   currentStamina: 0
   FirstStarNeedsStamina: 1
   SecondStarNeedsStamina: 2

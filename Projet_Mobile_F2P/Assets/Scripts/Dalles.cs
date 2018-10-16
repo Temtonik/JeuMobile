@@ -13,6 +13,7 @@ public class Dalles : MonoBehaviour {
     //public GameObject feedbackPress;
 
     public GameObject[] door;
+    public GameObject[] PassageCollidersDoor;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +29,6 @@ public class Dalles : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player" && my_SwapMove.is_Standing)
         {
-            Debug.Log("Trigger !");
             activatedPress += 1;
             triggerPress.SetActive(false);
             //feedbackPress.SetActive(true);
@@ -43,8 +43,11 @@ public class Dalles : MonoBehaviour {
         {
             for (int i = 0; i <= door.Length; i++)
             {
-                door[i].SetActive(false);
-                Debug.Log("Fonction !");
+                for (int j = 0; j <= PassageCollidersDoor.Length; j++)
+                {
+                    door[i].SetActive(false);
+                    PassageCollidersDoor[j].SetActive(true);
+                }
             }
         }
     }
