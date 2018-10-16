@@ -110,3 +110,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: lvl_2
   victoryCanvas: {fileID: 0}
+  pauseButton: {fileID: 0}

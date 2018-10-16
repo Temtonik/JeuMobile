@@ -109,9 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_SwapMove: {fileID: 0}
-  activatedPress: 1
   numberPressInLevel: 1
   triggerPress: {fileID: 1403542932007272}
-  feedbackPress: {fileID: 0}
-  door: {fileID: 0}
-  triggerRaycast: {fileID: 0}
+  door:
+  - {fileID: 0}
+  PassageCollidersDoor: []
