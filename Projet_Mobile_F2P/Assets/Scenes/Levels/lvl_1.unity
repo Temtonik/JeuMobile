@@ -259,6 +259,11 @@ Prefab:
       propertyPath: my_StaminaManager
       value: 
       objectReference: {fileID: 522822751}
+    - target: {fileID: 114219192975419172, guid: 8925d4c40305c984baea3ddd7ef3d2c2,
+        type: 2}
+      propertyPath: rayDistance
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8925d4c40305c984baea3ddd7ef3d2c2, type: 2}
   m_IsPrefabAsset: 0
@@ -372,16 +377,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4334689261244546, guid: d0bb88832c61b7c4e8d4b768f25577b2,
     type: 2}
   m_PrefabInternal: {fileID: 146394941}
---- !u!1 &146807076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1627457202569618, guid: dd881e97ed455974cbaa51b21c7c451e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1266421893}
---- !u!4 &146807077 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4722020170388300, guid: dd881e97ed455974cbaa51b21c7c451e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1266421893}
 --- !u!1001 &165303104
 Prefab:
   m_ObjectHideFlags: 0
@@ -669,7 +664,7 @@ Transform:
   m_LocalPosition: {x: -0.0020141602, y: 0.16571045, z: 2.005}
   m_LocalScale: {x: 1, y: 0.16569999, z: 1}
   m_Children:
-  - {fileID: 146807077}
+  - {fileID: 1266421894}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -685,7 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae8e52087c706249a14000f58c2d8e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  electricTrapAnim: {fileID: 146807076}
+  electricTrapAnim: {fileID: 0}
   my_StaminaManager: {fileID: 522822751}
   LoseStamina: 2
 --- !u!65 &315381892
@@ -1974,57 +1969,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4592685763880722, guid: c8290fa7e19d52b4e924ed97227b86cf,
     type: 2}
   m_PrefabInternal: {fileID: 691700968}
---- !u!1001 &702167901
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1125046536}
-    m_Modifications:
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4940351743862124, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.9071784
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809959927004338, guid: 958058b812f12bb4dbe18c49287961d1,
-        type: 2}
-      propertyPath: victoryCanvas
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!114 &705776279 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114219192975419172, guid: 8925d4c40305c984baea3ddd7ef3d2c2,
@@ -3387,6 +3331,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd881e97ed455974cbaa51b21c7c451e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1266421894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4195822188781180, guid: dd881e97ed455974cbaa51b21c7c451e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266421893}
 --- !u!1001 &1319356448
 Prefab:
   m_ObjectHideFlags: 0
