@@ -61,7 +61,8 @@ public class AccueilScript : MonoBehaviour {
 
      public void ReturnButton()
      {
-         SceneManager.LoadScene(Return);
+        selectLevelCanvas.SetActive(false);
+        homeCanvas.SetActive(true);
      }
 
     public void ParrainageButton()

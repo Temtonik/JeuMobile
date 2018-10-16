@@ -686,8 +686,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114873005832835104, guid: f973f929123e2304b8d7fd8e2d0281ae,
-          type: 2}
+      - m_Target: {fileID: 1858276901}
         m_MethodName: ReturnButton
         m_Mode: 1
         m_Arguments:
@@ -950,7 +949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &432355569
 MonoBehaviour:
   m_ObjectHideFlags: 0
