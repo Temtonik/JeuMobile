@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour {
 
     public string nextLevel;
-    public string SceneToLoadQuit;
 
     public GameObject victoryCanvas;
     public GameObject pauseButton;
@@ -46,7 +45,7 @@ public class FinishLevel : MonoBehaviour {
 
         public void QuitButton()
     {
-        SceneManager.LoadScene(SceneToLoadQuit);
+        SceneManager.LoadScene("Accueil");
         Time.timeScale = 1f;
     }
 }

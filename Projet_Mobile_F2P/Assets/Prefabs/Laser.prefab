@@ -37,7 +37,6 @@ GameObject:
   - component: {fileID: 4009179179844186}
   - component: {fileID: 198272453523571526}
   - component: {fileID: 199620043753788770}
-  - component: {fileID: 65848388563333546}
   m_Layer: 0
   m_Name: FaisseauLaser
   m_TagString: Untagged
@@ -53,7 +52,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4633060609081464}
-  - component: {fileID: 114239589839229488}
+  - component: {fileID: 65630537856986526}
+  - component: {fileID: 114094038344901246}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -85,7 +85,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410561419079812}
   m_LocalRotation: {x: 0.017474514, y: 0.014217295, z: -0.7068908, w: 0.7069639}
-  m_LocalPosition: {x: 2.41, y: -1.294, z: 0.54}
+  m_LocalPosition: {x: 1.676, y: 0.012, z: -1.68}
   m_LocalScale: {x: 0.24777007, y: 0.19477248, z: 0.41165167}
   m_Children:
   - {fileID: 4912848580765396}
@@ -112,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1539714619077020}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.684, y: 0.487, z: 6.38}
+  m_LocalPosition: {x: 1.97, y: 1.075, z: 7.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4009179179844186}
@@ -133,18 +133,18 @@ Transform:
   m_Father: {fileID: 4009179179844186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65848388563333546
+--- !u!65 &65630537856986526
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410561419079812}
+  m_GameObject: {fileID: 1539714619077020}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.55, y: 12.04, z: 6.4}
-  m_Center: {x: 0.26, y: -8.09, z: -1.71}
+  m_Size: {x: 2.45, y: 0.6, z: 3.96}
+  m_Center: {x: 0.26, y: 0, z: -1.71}
 --- !u!108 &108063190852353514
 Light:
   m_ObjectHideFlags: 1
@@ -182,7 +182,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114239589839229488
+--- !u!114 &114094038344901246
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,6 +196,8 @@ MonoBehaviour:
   laserAnim: {fileID: 1410561419079812}
   canvasDefeat: {fileID: 0}
   actionBeforeLaserActive: 1
+  currentTimer: 0
+  pauseButton: {fileID: 0}
 --- !u!198 &198117911465939060
 ParticleSystem:
   m_ObjectHideFlags: 1
