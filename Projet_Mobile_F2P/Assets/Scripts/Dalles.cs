@@ -17,7 +17,7 @@ public class Dalles : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        activatedPress = 0;
 	}
 	
 	// Update is called once per frame
@@ -45,6 +45,7 @@ public class Dalles : MonoBehaviour {
             {
                     door[i].SetActive(false);
                     PassageCollidersDoor[i].SetActive(true);
+
             }
         }
     }
