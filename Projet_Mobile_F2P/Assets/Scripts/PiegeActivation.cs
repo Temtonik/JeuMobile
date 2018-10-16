@@ -7,6 +7,7 @@ public class PiegeActivation : MonoBehaviour {
     public GameObject electricTrapAnim;
     public StaminaManager my_StaminaManager;
     public int LoseStamina;
+    public bool playerTriggered;
 
     // Use this for initialization
     void Start() {
@@ -20,12 +21,21 @@ public class PiegeActivation : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player") 
+        if (other.gameObject.tag == "Player" && !playerTriggered) 
         {
+            playerTriggered = true;
             electricTrapAnim.SetActive(true);
             my_StaminaManager.currentStamina -= LoseStamina;
             my_StaminaManager.ShowStamina();
             my_StaminaManager.CheckActualStamina();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            playerTriggered = false;
         }
     }
 }
