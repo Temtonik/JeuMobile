@@ -1534,6 +1534,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114702351155103792, guid: d7f3f7d8691fe6e4abceef6f0ea55a27,
+        type: 2}
+      propertyPath: victoryCanvas
+      value: 
+      objectReference: {fileID: 726155530}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f3f7d8691fe6e4abceef6f0ea55a27, type: 2}
   m_IsPrefabAsset: 0
@@ -1906,6 +1911,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 95504828}
   m_Script: {fileID: 11500000, guid: d210c9999546549419a6e408b5d83b42, type: 3}
+--- !u!1 &726155530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1920351214321918, guid: d550841049b96d843ab195cc7fa5c3c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1811736669}
 --- !u!1001 &762570526
 Prefab:
   m_ObjectHideFlags: 0
@@ -4168,12 +4178,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4856486275479328, guid: c1faf63ca8db9af47bc544cd4c1cc420,
     type: 2}
   m_PrefabInternal: {fileID: 1703180357}
---- !u!114 &1719138401 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114484585124911218, guid: d550841049b96d843ab195cc7fa5c3c2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1811736669}
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1726432961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4719,28 +4723,15 @@ Prefab:
       propertyPath: my_SwapMove
       value: 
       objectReference: {fileID: 705776279}
-    - target: {fileID: 224725293281616880, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.0140076
-      objectReference: {fileID: 0}
     - target: {fileID: 1920351214321918, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1416072306027468, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1419054271362174, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+    - target: {fileID: 224304558160048294, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
-      propertyPath: StaminaImg
-      value: 
-      objectReference: {fileID: 1719138401}
+      propertyPath: m_AnchoredPosition.y
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
