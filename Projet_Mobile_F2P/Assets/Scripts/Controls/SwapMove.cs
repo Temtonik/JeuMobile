@@ -22,6 +22,7 @@ public class SwapMove : MonoBehaviour
 
     public SoundManager my_SM;
     public StaminaManager my_StaminaManager;
+    public LaserScript my_LS;
 
 
     // Use this for initialization
@@ -107,6 +108,7 @@ public class SwapMove : MonoBehaviour
                     }
 
                     inMovement = true;
+                    my_LS.actionBeforeLaserActive--;
 
                 }
             }
@@ -142,6 +144,7 @@ public class SwapMove : MonoBehaviour
                     is_Standing = true;
                     is_acting = true;
                     my_SM.PlayStaySound();
+                    my_LS.actionBeforeLaserActive--;
                 }
             }
         }
