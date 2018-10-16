@@ -126,8 +126,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374045144132004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.237, y: -0.024, z: 2.156}
-  m_LocalScale: {x: 0.4014279, y: 0.4014279, z: 0.4014279}
+  m_LocalPosition: {x: -0.8510002, y: 0.98599994, z: 0.82900006}
+  m_LocalScale: {x: 0.40142784, y: 0.40142795, z: 0.401428}
   m_Children:
   - {fileID: 4161515160537888}
   - {fileID: 4327426875507676}
@@ -300,5 +300,12 @@ MonoBehaviour:
   numberPressInLevel: 2
   triggerPress: {fileID: 1160524944134888}
   door:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  PassageCollidersDoor:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
