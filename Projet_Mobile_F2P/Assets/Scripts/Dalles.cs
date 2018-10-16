@@ -11,7 +11,7 @@ public class Dalles : MonoBehaviour {
 
     public GameObject triggerPress;
     public GameObject feedbackPress;
-    public GameObject door;
+    public GameObject[] door;
     public GameObject triggerRaycast;
 
 	// Use this for initialization
@@ -42,8 +42,11 @@ public class Dalles : MonoBehaviour {
     {
         if (activatedPress == numberPressInLevel)
         {
-            door.SetActive(false);
-            triggerRaycast.SetActive(true);
+            for (int i = 0; i <= door.Length; i++)
+            {
+                door[i].SetActive(false);
+                triggerRaycast.SetActive(true);
+            }
         }
     }
 
