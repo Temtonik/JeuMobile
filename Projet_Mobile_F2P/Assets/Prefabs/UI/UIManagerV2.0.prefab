@@ -794,6 +794,7 @@ MonoBehaviour:
   ThirdStarNeedsStamina: 3
   my_SwapMove: {fileID: 0}
   StaminaImg: {fileID: 114484585124911218}
+  Defeate: {fileID: 1416072306027468}
 --- !u!114 &114484585124911218
 MonoBehaviour:
   m_ObjectHideFlags: 1

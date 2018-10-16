@@ -13,6 +13,7 @@ public class StaminaManager : MonoBehaviour {
     public int ThirdStarNeedsStamina;
     public SwapMove my_SwapMove;
     public Image StaminaImg;
+    public GameObject Defeate;
 
 
 	// Use this for initialization
@@ -50,7 +51,9 @@ public class StaminaManager : MonoBehaviour {
         if(currentStamina <= 0)
         {
             Debug.Log("Robot explosed");
-            //Show Loose Menu
+            // play anim
+            Time.timeScale = 0;
+            Defeate.SetActive(true);
         }
         if(currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {
