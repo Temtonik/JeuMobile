@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4009179179844186}
   - component: {fileID: 198272453523571526}
   - component: {fileID: 199620043753788770}
+  - component: {fileID: 82473050564755496}
   m_Layer: 0
   m_Name: FaisseauLaser
   m_TagString: Untagged
@@ -85,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410561419079812}
   m_LocalRotation: {x: 0.017474514, y: 0.014217295, z: -0.7068908, w: 0.7069639}
-  m_LocalPosition: {x: 1.676, y: 0.012, z: -1.68}
+  m_LocalPosition: {x: 1.676, y: 0.012, z: 0.045}
   m_LocalScale: {x: 0.24777007, y: 0.19477248, z: 0.41165167}
   m_Children:
   - {fileID: 4912848580765396}
@@ -111,9 +112,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1539714619077020}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.97, y: 1.075, z: 7.92}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.992, y: 1.2530204, z: -0.23}
+  m_LocalScale: {x: 1.1374763, y: 6.2216177, z: 1}
   m_Children:
   - {fileID: 4009179179844186}
   m_Father: {fileID: 0}
@@ -143,8 +144,103 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.45, y: 0.6, z: 3.96}
-  m_Center: {x: 0.26, y: 0, z: -1.71}
+  m_Size: {x: 2.45, y: 0.6, z: 0.7}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!82 &82473050564755496
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410561419079812}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 54da07e71c0519344b87841e0c286634, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.275
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!108 &108063190852353514
 Light:
   m_ObjectHideFlags: 1
@@ -197,6 +293,8 @@ MonoBehaviour:
   canvasDefeat: {fileID: 0}
   actionBeforeLaserActive: 1
   currentTimer: 0
+  my_SM: {fileID: 0}
+  my_StaminaManager: {fileID: 0}
   pauseButton: {fileID: 0}
 --- !u!198 &198117911465939060
 ParticleSystem:

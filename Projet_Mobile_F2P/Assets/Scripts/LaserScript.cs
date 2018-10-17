@@ -10,6 +10,8 @@ public class LaserScript : MonoBehaviour {
     BoxCollider my_BC;
     private float startTimer = 0.2f;
     public float currentTimer;
+    public SoundManager my_SM;
+    public StaminaManager my_StaminaManager;
 
     public GameObject pauseButton;
 
@@ -40,6 +42,7 @@ void Update () {
             currentTimer--;
             if(currentTimer == 0)
             {
+                //my_SM.PlayLaserSound();
                 laserAnim.SetActive(true);
                 my_BC.isTrigger = true;
                 currentTimer = 0;
@@ -66,8 +69,8 @@ void Update () {
     IEnumerator WaitForKill()
     {
         yield return new WaitForSeconds(0.3f);
-        canvasDefeat.SetActive(true);
-        pauseButton.SetActive(false);
-        Time.timeScale = 0;
+        my_StaminaManager.currentStamina = 0;
+        my_StaminaManager.ShowStamina();
+        my_StaminaManager.CheckActualStamina();
     }
 }

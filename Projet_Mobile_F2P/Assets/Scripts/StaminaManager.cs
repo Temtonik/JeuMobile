@@ -15,6 +15,7 @@ public class StaminaManager : MonoBehaviour {
     public Image StaminaImg;
     public GameObject Defeate;
     public GameObject pauseButton;
+    public SoundManager my_SM;
 
 
 	// Use this for initialization
@@ -51,7 +52,7 @@ public class StaminaManager : MonoBehaviour {
     {
         if(currentStamina <= 0)
         {
-            Debug.Log("Robot explosed");
+            my_SM.PlayDieSound();
             // play anim
             Time.timeScale = 0;
             Defeate.SetActive(true);

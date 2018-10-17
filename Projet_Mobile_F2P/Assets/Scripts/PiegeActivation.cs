@@ -8,6 +8,7 @@ public class PiegeActivation : MonoBehaviour {
     public StaminaManager my_StaminaManager;
     public int LoseStamina;
     public bool playerTriggered;
+    public SoundManager my_SM;
 
     // Use this for initialization
     void Start() {
@@ -25,6 +26,7 @@ public class PiegeActivation : MonoBehaviour {
         {
             playerTriggered = true;
             electricTrapAnim.SetActive(true);
+            //my_SM.PlayTrapSound();
             my_StaminaManager.currentStamina -= LoseStamina;
             my_StaminaManager.ShowStamina();
             my_StaminaManager.CheckActualStamina();
