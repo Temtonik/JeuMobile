@@ -3688,7 +3688,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4633060609081464, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.97
+      value: 2.046
       objectReference: {fileID: 0}
     - target: {fileID: 4633060609081464, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3696,7 +3696,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4633060609081464, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.92
+      value: 6.04
       objectReference: {fileID: 0}
     - target: {fileID: 4633060609081464, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3738,6 +3738,25 @@ Prefab:
       propertyPath: my_StaminaManager
       value: 
       objectReference: {fileID: 1766531508}
+    - target: {fileID: 4009179179844186, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 65630537856986526, guid: 4571c0021f0561e4b8319dba95217159,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 65630537856986526, guid: 4571c0021f0561e4b8319dba95217159,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 65630537856986526, guid: 4571c0021f0561e4b8319dba95217159,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
   m_IsPrefabAsset: 0
