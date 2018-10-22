@@ -1335,11 +1335,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1772877ee335b429567e059ef8a27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxStamina: 25
+  MaxStamina: 11
   currentStamina: 0
   FirstStarNeedsStamina: 1
-  SecondStarNeedsStamina: 2
-  ThirdStarNeedsStamina: 3
+  SecondStarNeedsStamina: 1
+  ThirdStarNeedsStamina: 1
   my_SwapMove: {fileID: 0}
   StaminaImg: {fileID: 114484585124911218}
   Defeate: {fileID: 1416072306027468}
@@ -1349,6 +1349,8 @@ MonoBehaviour:
   FirstStar: {fileID: 114389858752364224}
   SecondStar: {fileID: 114064757044780908}
   ThirdStar: {fileID: 114096276462458818}
+  FourStar: {fileID: 114855932085505538}
+  My_StartBonus: {fileID: 0}
 --- !u!114 &114484585124911218
 MonoBehaviour:
   m_ObjectHideFlags: 1

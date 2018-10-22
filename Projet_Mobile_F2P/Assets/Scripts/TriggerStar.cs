@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TriggerStar : MonoBehaviour {
 
     public GameObject Star;
-    public Image UiStar;
+    public bool StarBonus = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +23,7 @@ public class TriggerStar : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             Star.SetActive(false);
-            UiStar.fillAmount = 1;
+            StarBonus = true;
         }
     }
 }

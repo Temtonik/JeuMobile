@@ -21,6 +21,8 @@ public class StaminaManager : MonoBehaviour {
     public Image FirstStar;
     public Image SecondStar;
     public Image ThirdStar;
+    public Image FourStar;
+    public TriggerStar My_StartBonus;
 
 
     // Use this for initialization
@@ -76,6 +78,14 @@ public class StaminaManager : MonoBehaviour {
             FirstStar.fillAmount = 1;
             SecondStar.fillAmount = 1;
             ThirdStar.fillAmount = 1;
+        }
+
+        if(My_StartBonus.StarBonus)
+        {
+            FirstStar.fillAmount = 1;
+            SecondStar.fillAmount = 1;
+            ThirdStar.fillAmount = 1;
+            FourStar.fillAmount = 1;
         }
     }
 }
