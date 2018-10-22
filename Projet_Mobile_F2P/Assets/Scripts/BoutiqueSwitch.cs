@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boutique : MonoBehaviour {
+public class BoutiqueSwitch : MonoBehaviour {
 
     public GameObject boutiqueBonusCanvas;
     public GameObject boutiqueEurosCanvas;
