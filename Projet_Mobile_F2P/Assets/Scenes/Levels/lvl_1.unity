@@ -195,7 +195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Swipe vers le haut pour avancer ID.6 le robot aka Bob-e.
+  m_Text: Avancer ID.6 le robot d'une case.
 --- !u!222 &1369510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.21998136, y: 0.36329037}
   m_AnchorMax: {x: 0.78000003, y: 0.82860655}
-  m_AnchoredPosition: {x: 1.0499, y: 0.050003}
+  m_AnchoredPosition: {x: 1.0498962, y: 0.05000305}
   m_SizeDelta: {x: -1.800003, y: -0.10000038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101000442
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Swipe vers le bas pour que ID.6 le robot aka Bob-e reste sur place.
+  m_Text: Rester sur place / actionner une dalle.
 --- !u!222 &356811596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1087,13 +1087,13 @@ RectTransform:
   m_Children:
   - {fileID: 1495972332}
   - {fileID: 356811593}
-  m_Father: {fileID: 1811736673}
-  m_RootOrder: 8
+  m_Father: {fileID: 1404778134}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 0.5}
-  m_SizeDelta: {x: -1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422618278
 MonoBehaviour:
@@ -1578,7 +1578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12610786, y: 0.10456129}
   m_AnchorMax: {x: 0.87247187, y: 0.28100002}
-  m_AnchoredPosition: {x: -1.05, y: -0.77501}
+  m_AnchoredPosition: {x: -1.0499878, y: -0.7750244}
   m_SizeDelta: {x: 2.1, y: -1.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555478158
@@ -1627,8 +1627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Utilise la fonction gyroscopique de ton dispositif cellulaire pour mouvoir
-    ta cam\xE9ra."
+  m_Text: "Tourner la cam\xE9ra autour d'ID.6"
 --- !u!222 &555478160
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3463,13 +3462,13 @@ RectTransform:
   m_Children:
   - {fileID: 830171180}
   - {fileID: 1369507}
-  m_Father: {fileID: 1811736673}
-  m_RootOrder: 7
+  m_Father: {fileID: 1404778134}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 0.5}
-  m_SizeDelta: {x: -1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024621072
 MonoBehaviour:
@@ -4900,6 +4899,58 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a86fe8aaf7ee0c04b81b70a1eab3beeb, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1404778133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404778134}
+  - component: {fileID: 1404778135}
+  m_Layer: 5
+  m_Name: Tuto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1404778134
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404778133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1817521700}
+  - {fileID: 1024621071}
+  - {fileID: 422618277}
+  m_Father: {fileID: 1811736673}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1404778135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404778133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7d9f579cda2c24992aeeafc607395c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TutoGyro: {fileID: 1817521699}
+  TutoSwipeUp: {fileID: 1024621070}
+  TutoSwipeDown: {fileID: 422618276}
+  my_SwapMove: {fileID: 1993429491}
 --- !u!1001 &1428199778
 Prefab:
   m_ObjectHideFlags: 0
@@ -6359,13 +6410,13 @@ RectTransform:
   m_Children:
   - {fileID: 101000441}
   - {fileID: 555478157}
-  m_Father: {fileID: 1811736673}
-  m_RootOrder: 6
+  m_Father: {fileID: 1404778134}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.5, y: 0.5}
-  m_SizeDelta: {x: -1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1817521701
 MonoBehaviour:
