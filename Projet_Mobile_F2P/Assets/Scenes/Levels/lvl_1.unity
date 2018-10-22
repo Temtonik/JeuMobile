@@ -1404,6 +1404,11 @@ Prefab:
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 1811736670}
+    - target: {fileID: 114702351155103792, guid: d7f3f7d8691fe6e4abceef6f0ea55a27,
+        type: 2}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1811736671}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f3f7d8691fe6e4abceef6f0ea55a27, type: 2}
   m_IsPrefabAsset: 0
@@ -4603,12 +4608,32 @@ Prefab:
       propertyPath: my_SM
       value: 
       objectReference: {fileID: 544954844}
+    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 1811736671}
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 438473807}
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1811736670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1581769632576868, guid: d550841049b96d843ab195cc7fa5c3c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1811736669}
+--- !u!1 &1811736671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1098415555996494, guid: d550841049b96d843ab195cc7fa5c3c2,
     type: 2}
   m_PrefabInternal: {fileID: 1811736669}
 --- !u!1001 &1827830707

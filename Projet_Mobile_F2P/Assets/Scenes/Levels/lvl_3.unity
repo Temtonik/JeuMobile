@@ -1177,6 +1177,21 @@ Prefab:
       propertyPath: my_SM
       value: 
       objectReference: {fileID: 769172290}
+    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 259562721}
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1305493194}
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
@@ -1194,6 +1209,11 @@ GameObject:
 --- !u!1 &259562720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1581769632576868, guid: d550841049b96d843ab195cc7fa5c3c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 259562717}
+--- !u!1 &259562721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1098415555996494, guid: d550841049b96d843ab195cc7fa5c3c2,
     type: 2}
   m_PrefabInternal: {fileID: 259562717}
 --- !u!1001 &261968587
@@ -2394,6 +2414,11 @@ Prefab:
       propertyPath: my_StaminaManager
       value: 
       objectReference: {fileID: 259562718}
+    - target: {fileID: 114094038344901246, guid: 4571c0021f0561e4b8319dba95217159,
+        type: 2}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 259562721}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
   m_IsPrefabAsset: 0
@@ -2792,6 +2817,11 @@ Prefab:
       propertyPath: my_StaminaManager
       value: 
       objectReference: {fileID: 259562718}
+    - target: {fileID: 114094038344901246, guid: 4571c0021f0561e4b8319dba95217159,
+        type: 2}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 259562721}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4571c0021f0561e4b8319dba95217159, type: 2}
   m_IsPrefabAsset: 0
@@ -8191,6 +8221,11 @@ Prefab:
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 259562720}
+    - target: {fileID: 114809959927004338, guid: 958058b812f12bb4dbe18c49287961d1,
+        type: 2}
+      propertyPath: staminaBar
+      value: 
+      objectReference: {fileID: 259562721}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
   m_IsPrefabAsset: 0
