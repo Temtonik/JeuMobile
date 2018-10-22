@@ -18,9 +18,13 @@ public class StaminaManager : MonoBehaviour {
     public GameObject staminaBar;
     public SoundManager my_SM;
 
+    public Image FirstStar;
+    public Image SecondStar;
+    public Image ThirdStar;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         currentStamina = MaxStamina;
 	}
 	
@@ -56,18 +60,22 @@ public class StaminaManager : MonoBehaviour {
         if(currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {
             Debug.Log("Get 1st star");
+            FirstStar.fillAmount = 1;
         }
 
         if (currentStamina >= SecondStarNeedsStamina && currentStamina <= ThirdStarNeedsStamina)
         {
             Debug.Log("Get 2nd star");
+            FirstStar.fillAmount = 1;
+            SecondStar.fillAmount = 1;
         }
 
         if(currentStamina >= ThirdStarNeedsStamina)
         {
             Debug.Log("Get 3rd star");
+            FirstStar.fillAmount = 1;
+            SecondStar.fillAmount = 1;
+            ThirdStar.fillAmount = 1;
         }
     }
-
-
 }
