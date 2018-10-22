@@ -26,12 +26,6 @@ public class StaminaManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        /*
-		if(my_SwapMove.is_Moving || my_SwapMove.is_Standing)
-        {
-            UpdateStamina();
-        }
-        */
 
 	}
 
@@ -54,7 +48,6 @@ public class StaminaManager : MonoBehaviour {
         if(currentStamina <= 0)
         {
             my_SM.PlayDieSound();
-            // play anim
             Time.timeScale = 0;
             Defeate.SetActive(true);
             pauseButton.SetActive(false);
