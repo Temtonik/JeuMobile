@@ -14,6 +14,7 @@ public class LaserScript : MonoBehaviour {
     public StaminaManager my_StaminaManager;
 
     public GameObject pauseButton;
+    public GameObject staminaBar;
 
     // Use this for initialization
     void Start () {
@@ -72,5 +73,6 @@ void Update () {
         my_StaminaManager.currentStamina = 0;
         my_StaminaManager.ShowStamina();
         my_StaminaManager.CheckActualStamina();
+        staminaBar.SetActive(false);
     }
 }

@@ -15,6 +15,7 @@ public class StaminaManager : MonoBehaviour {
     public Image StaminaImg;
     public GameObject Defeate;
     public GameObject pauseButton;
+    public GameObject staminaBar;
     public SoundManager my_SM;
 
 
@@ -57,6 +58,7 @@ public class StaminaManager : MonoBehaviour {
             Time.timeScale = 0;
             Defeate.SetActive(true);
             pauseButton.SetActive(false);
+            staminaBar.SetActive(false);
         }
         if(currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {

@@ -9,6 +9,7 @@ public class FinishLevel : MonoBehaviour {
 
     public GameObject victoryCanvas;
     public GameObject pauseButton;
+    public GameObject staminaBar;
 
     // Use this for initialization
     void Start () {
@@ -26,6 +27,7 @@ public class FinishLevel : MonoBehaviour {
         {
             victoryCanvas.SetActive(true);
             pauseButton.SetActive(false);
+            staminaBar.SetActive(false);
             Time.timeScale = 0f;
         }
     }
