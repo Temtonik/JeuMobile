@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour {
 
+    public static ShopManager Singleton;
     public static int actionBought;
     public static int lifeBought;
     public static bool skin1;
@@ -11,11 +12,19 @@ public class ShopManager : MonoBehaviour {
     public static bool accessory;
 
     public static int nbStar;
-
+    
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
+        if (Singleton != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Singleton = this;
+            DontDestroyOnLoad(this);
+        }
     }
 
     // Use this for initialization
