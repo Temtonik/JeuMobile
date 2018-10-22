@@ -8,8 +8,6 @@ public class IGActionShop : ShopManager {
     public GameObject canvasBonus;
     public GameObject canvasBuyAction;
 
-
-
     // Use this for initialization
     void Start () {
 		
@@ -17,7 +15,7 @@ public class IGActionShop : ShopManager {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        
 	}
 
     public void CanvasBonus()
