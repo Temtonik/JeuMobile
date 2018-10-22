@@ -10,7 +10,7 @@ public class ShopManager : MonoBehaviour {
     public static bool skin2;
     public static bool accessory;
 
-    public int nbStar;
+    public static int nbStar;
 
     // Use this for initialization
     void Start () {
@@ -30,53 +30,53 @@ public class ShopManager : MonoBehaviour {
         }
     }
 
-    void Action()
+    public void Action()
     {
         actionBought += 5;
         nbStar-- ;
     }
 
-    void MoreAction()
+    public void MoreAction()
     {
         actionBought += 10;
         nbStar -= 2;
     }
 
-    void Life()
+    public void Life()
     {
         lifeBought += 1;
         nbStar-- ;
     }
 
-    void Skin1()
+    public void Skin1()
     {
         skin1 = true;
         nbStar -= 17;
     }
 
-    void Skin2()
+    public void Skin2()
     {
         skin2 = true;
         nbStar -= 15;
     }
 
-    void Accessory()
+    public void Accessory()
     {
         accessory = true;
         nbStar -= 6;
     }
 
-    void Star()
+    public void Star()
     {
         nbStar += 5;
     }
 
-    void MoreStar()
+    public void MoreStar()
     {
         nbStar += 10;
     }
 
-    void ALotOfStar()
+    public void ALotOfStar()
     {
         nbStar += 20;
     }

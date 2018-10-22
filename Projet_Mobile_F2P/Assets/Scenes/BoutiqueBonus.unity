@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 138865920}
   - component: {fileID: 138865919}
   m_Layer: 5
-  m_Name: AchatSkin3
+  m_Name: AchatSkin2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,7 +311,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 138865920}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: Skin2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &138865920
@@ -397,6 +408,7 @@ GameObject:
   - component: {fileID: 293292579}
   - component: {fileID: 293292578}
   - component: {fileID: 293292582}
+  - component: {fileID: 293292583}
   m_Layer: 5
   m_Name: Boutique
   m_TagString: Untagged
@@ -495,6 +507,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boutiqueBonusCanvas: {fileID: 353403899}
   boutiqueEurosCanvas: {fileID: 284014684}
+--- !u!114 &293292583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 293292577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dae6ba658ee664486dae38d9642376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &353403899
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +693,7 @@ GameObject:
   - component: {fileID: 529818839}
   - component: {fileID: 529818838}
   m_Layer: 5
-  m_Name: AchatVie
+  m_Name: AchatPlusAction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -733,7 +756,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 529818839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: MoreAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &529818839
@@ -987,7 +1021,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKIN3
+  m_Text: SKIN2
 --- !u!222 &607261175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1029,7 +1063,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19000001, y: 0.35012016}
   m_AnchorMax: {x: 0.8162501, y: 0.48634014}
-  m_AnchoredPosition: {x: -1.0001001, y: -0.5}
+  m_AnchoredPosition: {x: -1.0001068, y: -0.5}
   m_SizeDelta: {x: 0.6000366, y: -0.6000061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729441601
@@ -1070,7 +1104,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 729441602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: MoreStar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &729441602
@@ -1174,7 +1219,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKIN2
+  m_Text: SKIN1
 --- !u!222 &920255030
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1480,7 +1525,7 @@ GameObject:
   - component: {fileID: 1544907931}
   - component: {fileID: 1544907930}
   m_Layer: 5
-  m_Name: AchatSkin4
+  m_Name: AchatAccessoire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1543,7 +1588,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1544907931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: Accessory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1544907931
@@ -1647,7 +1703,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VIE
+  m_Text: ACTION++
 --- !u!222 &1605653153
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1805,7 +1861,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1624475567}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: Action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1624475567
@@ -1982,7 +2049,7 @@ GameObject:
   - component: {fileID: 1808054420}
   - component: {fileID: 1808054419}
   m_Layer: 5
-  m_Name: AchatSkin
+  m_Name: AchatVie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2045,7 +2112,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1808054420}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: Life
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1808054420
@@ -2116,7 +2194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19000001, y: 0.5831202}
   m_AnchorMax: {x: 0.8162501, y: 0.7175397}
-  m_AnchoredPosition: {x: 0.30001068, y: 0}
+  m_AnchoredPosition: {x: 0.30000305, y: 0}
   m_SizeDelta: {x: 0.6000366, y: 1.3999939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892353999
@@ -2157,7 +2235,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1892354000}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: Star
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1892354000
@@ -2336,7 +2425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKIN1
+  m_Text: VIE
 --- !u!222 &1961370322
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2411,7 +2500,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKIN4
+  m_Text: ACCESSOIRE
 --- !u!222 &1999115810
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2494,7 +2583,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2072981352}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: ALotOfStar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2072981352
@@ -2543,7 +2643,7 @@ GameObject:
   - component: {fileID: 2131521708}
   - component: {fileID: 2131521707}
   m_Layer: 5
-  m_Name: AchatSkin2
+  m_Name: AchatSkin1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2606,7 +2706,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2131521708}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 293292583}
+        m_MethodName: Skin1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2131521708
