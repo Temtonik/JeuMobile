@@ -12,6 +12,12 @@ public class ShopManager : MonoBehaviour {
 
     public static int nbStar;
 
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     // Use this for initialization
     void Start () {
 		
