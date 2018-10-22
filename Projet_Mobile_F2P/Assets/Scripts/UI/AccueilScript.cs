@@ -32,12 +32,6 @@ public class AccueilScript : MonoBehaviour {
         homeCanvas.SetActive(false);
     }
 
-    public void ShopButton()
-    {
-        shopCanvas.SetActive(true);
-    }
-
-
 
      public void LevelOne()
      {
@@ -68,5 +62,10 @@ public class AccueilScript : MonoBehaviour {
     public void ParrainageButton()
     {
         SceneManager.LoadScene("Parrainage");
+    }
+
+    public void BoutiqueButton()
+    {
+        SceneManager.LoadScene("BoutiqueBonus");
     }
 }
