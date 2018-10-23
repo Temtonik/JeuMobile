@@ -8,13 +8,13 @@ public class Light_stop : MonoBehaviour {
     public GameObject ActiveGyroLight;
     public GameObject ActiveLightRobot;
 
-    private bool lightActive;
-    private SwapMove my_Swipe;
+    private bool lightActive=true;
+    public SwapMove my_Swipe;
 
 	// Use this for initialization
 	void Start ()
     {
-        lightActive=true;
+
 	}
 	
 	// Update is called once per frame
@@ -31,6 +31,7 @@ public class Light_stop : MonoBehaviour {
             StopLightInScene.SetActive(false);
             ActiveGyroLight.SetActive(true);
             StartCoroutine(ActiveLightForRobot());
+            lightActive = false;
         }
 
     }

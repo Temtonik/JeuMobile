@@ -1330,6 +1330,7 @@ MonoBehaviour:
   StopLightInScene: {fileID: 527804058}
   ActiveGyroLight: {fileID: 957547187}
   ActiveLightRobot: {fileID: 1270395540}
+  my_Swipe: {fileID: 1211601903}
 --- !u!1001 &249631667
 Prefab:
   m_ObjectHideFlags: 0
