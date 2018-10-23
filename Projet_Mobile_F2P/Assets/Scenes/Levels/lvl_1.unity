@@ -1545,6 +1545,11 @@ Prefab:
       propertyPath: staminaBar
       value: 
       objectReference: {fileID: 1811736671}
+    - target: {fileID: 114702351155103792, guid: d7f3f7d8691fe6e4abceef6f0ea55a27,
+        type: 2}
+      propertyPath: canvasBoutique
+      value: 
+      objectReference: {fileID: 1811736673}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f3f7d8691fe6e4abceef6f0ea55a27, type: 2}
   m_IsPrefabAsset: 0
@@ -5784,6 +5789,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1811736669}
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &1811736673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1182984968510306, guid: d550841049b96d843ab195cc7fa5c3c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1811736669}
 --- !u!1001 &1827830707
 Prefab:
   m_ObjectHideFlags: 0
