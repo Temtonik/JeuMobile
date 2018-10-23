@@ -1002,6 +1002,15 @@ Prefab:
       propertyPath: SecondStarNeedsStamina
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: My_StartBonus
+      value: 
+      objectReference: {fileID: 2147258975}
+    - target: {fileID: 1920351214321918, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
@@ -12044,3 +12053,9 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02f33b31588f2ab428a383360f4e0053, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &2147258975 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114901722984420198, guid: 02f33b31588f2ab428a383360f4e0053,
+    type: 2}
+  m_PrefabInternal: {fileID: 2147258974}
+  m_Script: {fileID: 11500000, guid: dc239699610171d4fa8d3903ea08fbfd, type: 3}
