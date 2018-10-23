@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IGActionShop : ShopManager {
+public class IGActionShop : MonoBehaviour {
 
     public GameObject canvasBonus;
     public GameObject canvasBuyAction;
@@ -11,6 +11,7 @@ public class IGActionShop : ShopManager {
     public GameObject pauseButton;
 
     public StaminaManager my_SM;
+    public ShopManager my_ShopManager;
 
     // Use this for initialization
     void Start () {
@@ -19,7 +20,6 @@ public class IGActionShop : ShopManager {
 	
 	// Update is called once per frame
 	void Update () {
-
      
 	}
 
@@ -47,9 +47,9 @@ public class IGActionShop : ShopManager {
 
     public void Use()
     {
-        if (ShopManager.actionBought >= 5)
+        if (my_ShopManager.actionBought >= 5)
         {
-            ShopManager.actionBought -= 5;
+            my_ShopManager.actionBought -= 5;
             my_SM.currentStamina += 5;
             my_SM.ShowStamina();
             my_SM.CheckActualStamina();
@@ -57,17 +57,18 @@ public class IGActionShop : ShopManager {
             canvasBuyAction.SetActive(false);
             canvasBonus.SetActive(false);
             Time.timeScale = 1f;
+            Debug.Log(my_ShopManager.actionBought);
         }
 
     }
 
     public void BuyStar()
     {
-        ShopManager.actionBought += 5;
+        my_ShopManager.actionBought += 5;
     }
 
     public void BuyMoreStar()
     {
-        ShopManager.actionBought += 10;
+        my_ShopManager.actionBought += 10;
     }
 }

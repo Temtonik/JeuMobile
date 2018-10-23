@@ -1571,6 +1571,21 @@ Prefab:
       propertyPath: thisGameObject
       value: 
       objectReference: {fileID: 751578106}
+    - target: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
+        type: 2}
+      propertyPath: skin1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
+        type: 2}
+      propertyPath: lifeBought
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
+        type: 2}
+      propertyPath: actionBought
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85edd9db7ee6f434abe540556dd748d6, type: 2}
   m_IsPrefabAsset: 0

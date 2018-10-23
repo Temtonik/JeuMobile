@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour {
 
-    public static ShopManager Singleton;
-    public static int actionBought;
-    public static int lifeBought;
-    public static bool skin1;
-    public static bool skin2;
-    public static bool accessory;
+    public ShopManager Singleton;
+    public int actionBought;
+    public int lifeBought;
+    public bool skin1;
+    public bool skin2;
+    public bool accessory;
 
     public static int nbStar;
     
@@ -34,15 +34,7 @@ public class ShopManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-        if (skin1 == true)
-        {
-            skin2 = false;
-        }
-        if (skin2 == true)
-        {
-            skin1 = false;
-        }
+
     }
 
     public void Action()

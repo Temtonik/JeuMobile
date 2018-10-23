@@ -230,7 +230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1162026062107808
 GameObject:
   m_ObjectHideFlags: 1
@@ -1051,7 +1051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1828572045370372
 GameObject:
   m_ObjectHideFlags: 1
@@ -1082,7 +1082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1859997821204320
 GameObject:
   m_ObjectHideFlags: 1
@@ -2538,11 +2538,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b1772877ee335b429567e059ef8a27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxStamina: 16
+  MaxStamina: 11
   currentStamina: 0
   FirstStarNeedsStamina: 0
   SecondStarNeedsStamina: 0
-  ThirdStarNeedsStamina: 5
+  ThirdStarNeedsStamina: 1
   my_SwapMove: {fileID: 0}
   StaminaImg: {fileID: 114484585124911218}
   Defeate: {fileID: 1416072306027468}
@@ -3362,6 +3362,8 @@ MonoBehaviour:
   canvasDefeatStamina: {fileID: 1416072306027468}
   pauseButton: {fileID: 1581769632576868}
   my_SM: {fileID: 114471545336125368}
+  my_ShopManager: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
+    type: 2}
 --- !u!114 &114773349056759840
 MonoBehaviour:
   m_ObjectHideFlags: 1
