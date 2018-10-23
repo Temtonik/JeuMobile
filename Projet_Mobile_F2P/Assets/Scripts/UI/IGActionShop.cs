@@ -44,11 +44,16 @@ public class IGActionShop : ShopManager {
 
     public void Use()
     {
-        ShopManager.actionBought -= 5;
-        canvasDefeatStamina.SetActive(false);
-        canvasBuyAction.SetActive(false);
-        canvasBonus.SetActive(false);
-        Time.timeScale = 1f;
+        if (ShopManager.actionBought >= 5)
+        {
+            ShopManager.actionBought -= 5;
+            my_SM.currentStamina += 5;
+            canvasDefeatStamina.SetActive(false);
+            canvasBuyAction.SetActive(false);
+            canvasBonus.SetActive(false);
+            Time.timeScale = 1f;
+        }
+
     }
 
     public void BuyStar()
