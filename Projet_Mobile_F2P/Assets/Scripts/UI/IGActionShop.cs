@@ -37,6 +37,7 @@ public class IGActionShop : ShopManager {
     public void QuitCanvasBonus()
     {
         canvasBonus.SetActive(false);
+        pauseButton.SetActive(true);
     }
 
     public void QuitCanvasBuyAction()
