@@ -59,6 +59,12 @@ public class StaminaManager : MonoBehaviour {
             pauseButton.SetActive(false);
             staminaBar.SetActive(false);
         }
+
+        if(currentStamina >= MaxStamina)
+        {
+            currentStamina = MaxStamina;
+        }
+
         if(currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {
             Debug.Log("Get 1st star");
