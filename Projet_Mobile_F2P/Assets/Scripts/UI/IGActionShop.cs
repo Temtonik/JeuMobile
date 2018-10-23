@@ -8,6 +8,7 @@ public class IGActionShop : ShopManager {
     public GameObject canvasBonus;
     public GameObject canvasBuyAction;
     public GameObject canvasDefeatStamina;
+    public GameObject pauseButton;
 
     public StaminaManager my_SM;
 
@@ -25,6 +26,7 @@ public class IGActionShop : ShopManager {
     public void CanvasBonus()
     {
         canvasBonus.SetActive(true);
+        pauseButton.SetActive(false);
     }
 
     public void CanvasBuyAction()
