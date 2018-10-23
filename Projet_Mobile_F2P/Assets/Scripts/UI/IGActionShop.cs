@@ -48,6 +48,7 @@ public class IGActionShop : ShopManager {
         {
             ShopManager.actionBought -= 5;
             my_SM.currentStamina += 5;
+            my_SM.ShowStamina();
             canvasDefeatStamina.SetActive(false);
             canvasBuyAction.SetActive(false);
             canvasBonus.SetActive(false);
