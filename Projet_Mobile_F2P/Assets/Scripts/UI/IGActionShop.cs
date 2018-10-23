@@ -7,6 +7,9 @@ public class IGActionShop : ShopManager {
 
     public GameObject canvasBonus;
     public GameObject canvasBuyAction;
+    public GameObject canvasDefeatStamina;
+
+    public StaminaManager my_SM;
 
     // Use this for initialization
     void Start () {
@@ -15,7 +18,8 @@ public class IGActionShop : ShopManager {
 	
 	// Update is called once per frame
 	void Update () {
-        
+
+     
 	}
 
     public void CanvasBonus()
@@ -41,7 +45,10 @@ public class IGActionShop : ShopManager {
     public void Use()
     {
         ShopManager.actionBought -= 5;
-        Debug.Log(actionBought);
+        canvasDefeatStamina.SetActive(false);
+        canvasBuyAction.SetActive(false);
+        canvasBonus.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     public void BuyStar()
