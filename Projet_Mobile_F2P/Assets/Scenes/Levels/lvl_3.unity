@@ -1663,6 +1663,25 @@ Prefab:
       propertyPath: my_SM
       value: 
       objectReference: {fileID: 259562718}
+    - target: {fileID: 224877970615581128, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: FirstStarNeedsStamina
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154772085003532, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: My_StartBonus
+      value: 
+      objectReference: {fileID: 715017990}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
@@ -4281,6 +4300,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02f33b31588f2ab428a383360f4e0053, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &715017990 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114901722984420198, guid: 02f33b31588f2ab428a383360f4e0053,
+    type: 2}
+  m_PrefabInternal: {fileID: 715017989}
+  m_Script: {fileID: 11500000, guid: dc239699610171d4fa8d3903ea08fbfd, type: 3}
 --- !u!4 &715017991 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4015432074680716, guid: 02f33b31588f2ab428a383360f4e0053,
@@ -11448,6 +11473,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518734752028298, guid: 0b83f018da0a2b84c87d2568b0babf95, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b83f018da0a2b84c87d2568b0babf95, type: 2}
