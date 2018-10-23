@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 98812388}
   - component: {fileID: 98812392}
   m_Layer: 5
-  m_Name: CanvasTest
+  m_Name: CanvasTestBoutique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasBonus: {fileID: 1087492094}
   canvasBuyAction: {fileID: 2072141136}
-  actionNumber: {fileID: 0}
 --- !u!1 &176922762
 GameObject:
   m_ObjectHideFlags: 0
