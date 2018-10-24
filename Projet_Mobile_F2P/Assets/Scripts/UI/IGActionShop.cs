@@ -9,6 +9,7 @@ public class IGActionShop : MonoBehaviour {
     public GameObject canvasBuyAction;
     public GameObject canvasDefeatStamina;
     public GameObject pauseButton;
+    public GameObject canvasBoutique;
 
     public StaminaManager my_SM;
 
@@ -26,6 +27,7 @@ public class IGActionShop : MonoBehaviour {
     {
         canvasBonus.SetActive(true);
         pauseButton.SetActive(false);
+        canvasBoutique.SetActive(true);
     }
 
     public void CanvasBuyAction()
@@ -37,6 +39,7 @@ public class IGActionShop : MonoBehaviour {
     {
         canvasBonus.SetActive(false);
         pauseButton.SetActive(true);
+        canvasBoutique.SetActive(false);
     }
 
     public void QuitCanvasBuyAction()
@@ -55,8 +58,9 @@ public class IGActionShop : MonoBehaviour {
             canvasDefeatStamina.SetActive(false);
             canvasBuyAction.SetActive(false);
             canvasBonus.SetActive(false);
+            canvasBoutique.SetActive(false);
+            pauseButton.SetActive(true);
             Time.timeScale = 1f;
-            Debug.Log(ShopManager.Singleton.actionBought);
         }
 
     }
