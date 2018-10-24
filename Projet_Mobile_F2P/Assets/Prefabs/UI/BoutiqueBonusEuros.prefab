@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222564891035787530}
   - component: {fileID: 114136693193603192}
   - component: {fileID: 114130576874314232}
+  - component: {fileID: 114596446517337540}
   m_Layer: 5
   m_Name: AchatAction
   m_TagString: Untagged
@@ -76,6 +77,7 @@ GameObject:
   - component: {fileID: 222634669618760954}
   - component: {fileID: 114573192184784406}
   - component: {fileID: 114154002698589556}
+  - component: {fileID: 114284002413643274}
   m_Layer: 5
   m_Name: AchatEtoile3
   m_TagString: Untagged
@@ -94,6 +96,7 @@ GameObject:
   - component: {fileID: 222848873189276026}
   - component: {fileID: 114945014690744386}
   - component: {fileID: 114576769518718622}
+  - component: {fileID: 114213697457911326}
   m_Layer: 5
   m_Name: AchatEtoile2
   m_TagString: Untagged
@@ -130,6 +133,7 @@ GameObject:
   - component: {fileID: 222207532541945534}
   - component: {fileID: 114269523190629940}
   - component: {fileID: 114545281457981048}
+  - component: {fileID: 114871018465927814}
   m_Layer: 5
   m_Name: AchatEtoile1
   m_TagString: Untagged
@@ -199,6 +203,7 @@ GameObject:
   - component: {fileID: 222062951254138578}
   - component: {fileID: 114352530190315600}
   - component: {fileID: 114987974697298366}
+  - component: {fileID: 114174323512775996}
   m_Layer: 5
   m_Name: AchatPlusAction
   m_TagString: Untagged
@@ -217,6 +222,7 @@ GameObject:
   - component: {fileID: 222063877909802398}
   - component: {fileID: 114013196470263486}
   - component: {fileID: 114137875419271546}
+  - component: {fileID: 114222901247251330}
   m_Layer: 5
   m_Name: AchatVie
   m_TagString: Untagged
@@ -552,9 +558,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
-          type: 2}
-        m_MethodName: Action
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -632,9 +637,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
-          type: 2}
-        m_MethodName: Life
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -698,6 +702,19 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114174323512775996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545660844982174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextualShopActions: 1
+  ShopInGame: {fileID: 0}
 --- !u!114 &114203548720876818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -717,7 +734,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5cf19f64cfeca874c8351827e06e8509, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2dbe1655abab4f04f90a0f42db3d00a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -752,6 +769,32 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114213697457911326
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1184546998821866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextualShopActions: 5
+  ShopInGame: {fileID: 0}
+--- !u!114 &114222901247251330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1637271557259734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextualShopActions: 2
+  ShopInGame: {fileID: 0}
 --- !u!114 &114229300885517126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -893,6 +936,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114284002413643274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171557940104174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextualShopActions: 6
+  ShopInGame: {fileID: 0}
 --- !u!114 &114294325355637698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1157,6 +1213,19 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114596446517337540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1015330488154944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextualShopActions: 0
+  ShopInGame: {fileID: 0}
 --- !u!114 &114605372007953944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1315,6 +1384,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boutiqueBonusCanvas: {fileID: 1947115797017698}
   boutiqueEurosCanvas: {fileID: 1334007060965186}
+--- !u!114 &114871018465927814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1219988281062928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contextualShopActions: 4
+  ShopInGame: {fileID: 0}
 --- !u!114 &114899015993208116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1519,9 +1601,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
-          type: 2}
-        m_MethodName: MoreAction
+      - m_Target: {fileID: 0}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1861,7 +1942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1675, y: 0.16654955}
   m_AnchorMax: {x: 0.34625, y: 0.2715625}
-  m_AnchoredPosition: {x: -0.07499695, y: 0.56770325}
+  m_AnchoredPosition: {x: -0.07501221, y: 0.567688}
   m_SizeDelta: {x: 0.14999, y: 3.9350004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224407864089956140
@@ -1897,7 +1978,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1675, y: 0.57266176}
   m_AnchorMax: {x: 0.34625, y: 0.6823437}
-  m_AnchoredPosition: {x: -0.3500061, y: -0.20000076}
+  m_AnchoredPosition: {x: -0.3500061, y: -0.19999695}
   m_SizeDelta: {x: 0.29999, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224460493779714792
@@ -2072,7 +2153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1675, y: 0.36886752}
   m_AnchorMax: {x: 0.34625, y: 0.4765625}
-  m_AnchoredPosition: {x: -0.17500305, y: -1.5999985}
+  m_AnchoredPosition: {x: -0.1749878, y: -1.6000061}
   m_SizeDelta: {x: -0.050018, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224824435856202808

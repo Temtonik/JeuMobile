@@ -11,7 +11,7 @@ public class ShopManager : MonoBehaviour {
     public bool skin2;
     public bool accessory;
 
-    public static int nbStar;
+    public int nbStar;
     
 
     void Awake()
