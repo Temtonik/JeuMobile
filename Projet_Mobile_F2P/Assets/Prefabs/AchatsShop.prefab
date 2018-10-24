@@ -51,8 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25dae6ba658ee664486dae38d9642376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Singleton: {fileID: 0}
-  actionBought: 0
+  actionBought: 40
   lifeBought: 0
   skin1: 0
   skin2: 0

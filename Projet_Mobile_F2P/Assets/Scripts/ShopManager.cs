@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour {
 
-    public ShopManager Singleton;
+    public static ShopManager Singleton;
     public int actionBought;
     public int lifeBought;
     public bool skin1;

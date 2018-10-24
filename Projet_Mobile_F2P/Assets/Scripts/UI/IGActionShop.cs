@@ -11,7 +11,6 @@ public class IGActionShop : MonoBehaviour {
     public GameObject pauseButton;
 
     public StaminaManager my_SM;
-    public ShopManager my_ShopManager;
 
     // Use this for initialization
     void Start () {
@@ -47,9 +46,9 @@ public class IGActionShop : MonoBehaviour {
 
     public void Use()
     {
-        if (my_ShopManager.actionBought >= 5)
+        if (ShopManager.Singleton.actionBought >= 5)
         {
-            my_ShopManager.actionBought -= 5;
+            ShopManager.Singleton.actionBought -= 5;
             my_SM.currentStamina += 5;
             my_SM.ShowStamina();
             my_SM.CheckActualStamina();
@@ -57,18 +56,18 @@ public class IGActionShop : MonoBehaviour {
             canvasBuyAction.SetActive(false);
             canvasBonus.SetActive(false);
             Time.timeScale = 1f;
-            Debug.Log(my_ShopManager.actionBought);
+            Debug.Log(ShopManager.Singleton.actionBought);
         }
 
     }
 
     public void BuyStar()
     {
-        my_ShopManager.actionBought += 5;
+        ShopManager.Singleton.actionBought += 5;
     }
 
     public void BuyMoreStar()
     {
-        my_ShopManager.actionBought += 10;
+        ShopManager.Singleton.actionBought += 10;
     }
 }
