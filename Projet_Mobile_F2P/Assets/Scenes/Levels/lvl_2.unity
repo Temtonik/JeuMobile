@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14581496, g: 0.13377205, b: 0.24863783, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -7722,8 +7722,6 @@ MonoBehaviour:
   canvasDefeatStamina: {fileID: 1766531509}
   pauseButton: {fileID: 1766531510}
   my_SM: {fileID: 1766531508}
-  my_ShopManager: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
-    type: 2}
 --- !u!1001 &997124445
 Prefab:
   m_ObjectHideFlags: 0
@@ -14054,7 +14052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  MaxStamina: 25
+  MaxStamina: 16
   currentStamina: 0
   FirstStarNeedsStamina: 1
   SecondStarNeedsStamina: 3
@@ -15404,6 +15402,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1940471747}
   m_Mesh: {fileID: 4300000, guid: 4145d79a2e7614c449cbb67181a01886, type: 3}
+--- !u!1001 &1941160090
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15.469699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -17.6459
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.635876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1951495918
 Prefab:
   m_ObjectHideFlags: 0

@@ -2323,11 +2323,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  MaxStamina: 25
+  MaxStamina: 11
   currentStamina: 0
-  FirstStarNeedsStamina: 1
-  SecondStarNeedsStamina: 3
-  ThirdStarNeedsStamina: 4
+  FirstStarNeedsStamina: 0
+  SecondStarNeedsStamina: 0
+  ThirdStarNeedsStamina: 1
   my_SwapMove: {fileID: 1993429491}
   StaminaImg: {fileID: 1336171896}
   Defeate: {fileID: 2088623596}
@@ -8711,6 +8711,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726432961}
   m_Mesh: {fileID: 4300000, guid: 2c33def46326fbd42a987a9fc6dc1154, type: 3}
+--- !u!1001 &1730497562
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15.469699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -17.6459
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.635876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703048618198476, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c7aad6bb8e772624097da7c01eda2688, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1758160279
 Prefab:
   m_ObjectHideFlags: 0
@@ -9291,8 +9333,6 @@ MonoBehaviour:
   canvasDefeatStamina: {fileID: 2088623596}
   pauseButton: {fileID: 1811736670}
   my_SM: {fileID: 522822751}
-  my_ShopManager: {fileID: 114408531557906796, guid: 85edd9db7ee6f434abe540556dd748d6,
-    type: 2}
 --- !u!224 &1811736676
 RectTransform:
   m_ObjectHideFlags: 0
