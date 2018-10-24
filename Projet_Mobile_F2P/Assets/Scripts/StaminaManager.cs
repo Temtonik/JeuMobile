@@ -62,7 +62,7 @@ public class StaminaManager : MonoBehaviour {
             my_SM.PlayDieSound();
             Time.timeScale = 0;
             Defeate.SetActive(true);
-            pauseButton.SetActive(false);
+            Destroy(pauseButton);
             staminaBar.SetActive(false);
         }
 

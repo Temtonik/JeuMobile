@@ -13,7 +13,6 @@ public class LaserScript : MonoBehaviour {
     public SoundManager my_SM;
     public StaminaManager my_StaminaManager;
 
-    public GameObject pauseButton;
     public GameObject staminaBar;
 
     // Use this for initialization

@@ -31,7 +31,7 @@ public class FinishLevel : MonoBehaviour {
             //animator.SetBool("victory", true);
             mySM.PlayVictorySound();
             victoryCanvas.SetActive(true);
-            pauseButton.SetActive(false);
+            Destroy(pauseButton);
             staminaBar.SetActive(false);
             canvasBoutique.SetActive(false);
             Time.timeScale = 0f;
