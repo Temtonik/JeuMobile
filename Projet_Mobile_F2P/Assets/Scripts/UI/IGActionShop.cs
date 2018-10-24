@@ -25,9 +25,12 @@ public class IGActionShop : MonoBehaviour {
 
     public void CanvasBonus()
     {
-        canvasBonus.SetActive(true);
-        pauseButton.SetActive(false);
-        canvasBoutique.SetActive(true);
+        if (pauseButton != null)
+        {
+            canvasBonus.SetActive(true);
+            pauseButton.SetActive(false);
+            canvasBoutique.SetActive(true);
+        }
     }
 
     public void CanvasBuyAction()
@@ -37,9 +40,12 @@ public class IGActionShop : MonoBehaviour {
 
     public void QuitCanvasBonus()
     {
-        canvasBonus.SetActive(false);
-        pauseButton.SetActive(true);
-        canvasBoutique.SetActive(false);
+        if (pauseButton != null)
+        {
+            canvasBonus.SetActive(false);
+            pauseButton.SetActive(true);
+            canvasBoutique.SetActive(false);
+        }
     }
 
     public void QuitCanvasBuyAction()

@@ -919,7 +919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &149722295
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1377916964}
+      objectReference: {fileID: 159937689}
     - target: {fileID: 114669500352205912, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1275,7 +1275,17 @@ Prefab:
     - target: {fileID: 224881786758571772, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224345649627277360, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114180404781027544, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
@@ -1300,6 +1310,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1098415555996494, guid: d550841049b96d843ab195cc7fa5c3c2,
     type: 2}
   m_PrefabInternal: {fileID: 159937683}
+--- !u!1 &159937688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1555221367190752, guid: d550841049b96d843ab195cc7fa5c3c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 159937683}
+--- !u!114 &159937689 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114659492553747120, guid: d550841049b96d843ab195cc7fa5c3c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 159937683}
+  m_Script: {fileID: 11500000, guid: 93757e31901a10d4abe937b6c6719fab, type: 3}
 --- !u!1 &162931801
 GameObject:
   m_ObjectHideFlags: 0
@@ -9549,6 +9570,11 @@ Prefab:
       propertyPath: staminaBar
       value: 
       objectReference: {fileID: 159937687}
+    - target: {fileID: 114809959927004338, guid: 958058b812f12bb4dbe18c49287961d1,
+        type: 2}
+      propertyPath: canvasBoutique
+      value: 
+      objectReference: {fileID: 159937688}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 958058b812f12bb4dbe18c49287961d1, type: 2}
   m_IsPrefabAsset: 0

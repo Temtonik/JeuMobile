@@ -59,6 +59,7 @@ public class StaminaManager : MonoBehaviour {
         if(currentStamina <= 0)
         {
             //animator.SetBool("death", true);
+            currentStamina = 0;
             my_SM.PlayDieSound();
             Time.timeScale = 0;
             Defeate.SetActive(true);
@@ -80,6 +81,8 @@ public class StaminaManager : MonoBehaviour {
         {
             Debug.Log("Get 1st star");
             FirstStar.fillAmount = 1;
+            SecondStar.fillAmount = 0;
+            ThirdStar.fillAmount = 0;
         }
 
         if (currentStamina >= SecondStarNeedsStamina && currentStamina <= ThirdStarNeedsStamina)
@@ -87,6 +90,7 @@ public class StaminaManager : MonoBehaviour {
             Debug.Log("Get 2nd star");
             FirstStar.fillAmount = 1;
             SecondStar.fillAmount = 1;
+            ThirdStar.fillAmount = 0;
         }
 
         if(currentStamina >= ThirdStarNeedsStamina)

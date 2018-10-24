@@ -13,6 +13,6 @@ public class GyroscopeControl : MonoBehaviour {
 
     void Update()
     {
-        player.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y*5.0f * Time.timeScale, 0);
+        player.transform.Rotate(0, -Input.gyro.rotationRateUnbiased.y*2.4f * Time.timeScale, 0);
     }
 }
