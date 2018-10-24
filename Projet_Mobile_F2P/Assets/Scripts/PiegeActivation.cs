@@ -9,12 +9,14 @@ public class PiegeActivation : MonoBehaviour {
     public int LoseStamina;
     public bool playerTriggered;
     public SoundManager my_SM;
+    private DialogueManager myDM;
 
     public Animator animator;
 
+
     // Use this for initialization
     void Start() {
-
+        myDM = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class PiegeActivation : MonoBehaviour {
         if (other.gameObject.tag == "Player" && !playerTriggered) 
         {
             animator.SetBool("electricity", true);
+            myDM.PlayAieSound();
             playerTriggered = true;
             electricTrapAnim.SetActive(true);
             //my_SM.PlayTrapSound();

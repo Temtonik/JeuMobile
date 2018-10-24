@@ -26,11 +26,14 @@ public class StaminaManager : MonoBehaviour {
     public Image FourStar;
     public TriggerStar My_StartBonus;
 
+    private DialogueManager myDM;
+
 
     // Use this for initialization
     void Start () {
         currentStamina = MaxStamina;
-	}
+        myDM = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -61,6 +64,11 @@ public class StaminaManager : MonoBehaviour {
             Defeate.SetActive(true);
             pauseButton.SetActive(false);
             staminaBar.SetActive(false);
+        }
+
+        if(currentStamina == 3)
+        {
+            myDM.PlayBatterieSound();
         }
 
         if(currentStamina >= MaxStamina)

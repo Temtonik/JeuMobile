@@ -10,10 +10,14 @@ public class DialogueManager : MonoBehaviour {
     public AudioClip Snd_Batterie;
     public AudioClip Snd_Boulons;
     public AudioClip Snd_Detruire;
+    private float RandomTimer;
 
     // Use this for initialization
     void Start () {
         AudioSource = GetComponent<AudioSource>();
+        RandomTimer = Random.Range(10f,20f);
+        StartCoroutine(PlayTimerBoulonSound());
+        StartCoroutine(PlayTimerDetruireSound());
 	}
 	
 	// Update is called once per frame
@@ -40,5 +44,17 @@ public class DialogueManager : MonoBehaviour {
     {
         AudioSource.clip = Snd_Detruire;
         AudioSource.Play();
+    }
+
+    IEnumerator PlayTimerBoulonSound()
+    {
+        yield return new WaitForSeconds(30f);
+        PlayBoulonSound();
+    }
+
+    IEnumerator PlayTimerDetruireSound()
+    {
+        yield return new WaitForSeconds(RandomTimer);
+        PlayDetruireSound();
     }
 }
