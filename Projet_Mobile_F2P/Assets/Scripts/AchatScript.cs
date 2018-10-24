@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class AchatScript : MonoBehaviour {
 
-    public enum ShopActions { FiveActions, TenActions, Life }
+    public enum ShopActions { FiveActions, TenActions, Life, UseActions }
     public ShopActions contextualShopActions;
+    public IGActionShop ShopInGame;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         switch (contextualShopActions)
         {
             case ShopActions.FiveActions:
@@ -22,6 +23,10 @@ public class AchatScript : MonoBehaviour {
 
             case ShopActions.Life:
                 GetComponent<Button>().onClick.AddListener(() => ShopManager.Singleton.Life());
+                break;
+
+            case ShopActions.UseActions:
+                GetComponent<Button>().onClick.AddListener(() => ShopInGame.Use());
                 break;
         }
 
