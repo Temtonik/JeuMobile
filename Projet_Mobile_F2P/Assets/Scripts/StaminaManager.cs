@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class StaminaManager : MonoBehaviour {
 
+    public Animator animator;
+
     public float MaxStamina;
     public float currentStamina;
     public int FirstStarNeedsStamina;
@@ -53,6 +55,7 @@ public class StaminaManager : MonoBehaviour {
     {
         if(currentStamina <= 0)
         {
+            animator.SetBool("death", true);
             my_SM.PlayDieSound();
             Time.timeScale = 0;
             Defeate.SetActive(true);

@@ -9,6 +9,8 @@ public class Dalles : MonoBehaviour {
     public static int activatedPress;
     public int numberPressInLevel;
 
+    public Animator animator;
+
     public GameObject triggerPress;
     //public GameObject feedbackPress;
 
@@ -29,6 +31,7 @@ public class Dalles : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player" && my_SwapMove.is_Standing)
         {
+            animator.SetBool("button", true);
             activatedPress += 1;
             triggerPress.SetActive(false);
             //feedbackPress.SetActive(true);
