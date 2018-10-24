@@ -3143,6 +3143,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a86fe8aaf7ee0c04b81b70a1eab3beeb, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &474863901
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 607.21326
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 231.38734
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -3.6758947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813667507590316, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1aadd82f990805e4f86e3fd7cb6c30ae, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &479335865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4334689261244546, guid: d0bb88832c61b7c4e8d4b768f25577b2,
