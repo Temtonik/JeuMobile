@@ -7,10 +7,12 @@ public class PubAleatoireFixe : MonoBehaviour {
 
     public Image[] My_TabPub;
     public GameObject PanelPub;
+    private AudioSource IGMusic;
 
 	// Use this for initialization
 	void Start ()
     {
+        IGMusic = GameObject.FindGameObjectWithTag("IGMusic").GetComponent<AudioSource>();
         PanelPub.SetActive(true);
         ShowMyPub();
 	}
@@ -32,6 +34,7 @@ public class PubAleatoireFixe : MonoBehaviour {
 
     public void OnClickQuitPub ()
     {
+        IGMusic.Play();
         PanelPub.SetActive(false);
         Time.timeScale = 1;
     }

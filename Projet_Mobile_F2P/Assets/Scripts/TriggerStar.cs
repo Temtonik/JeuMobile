@@ -7,11 +7,14 @@ public class TriggerStar : MonoBehaviour {
 
     public GameObject Star;
     public bool StarBonus = false;
+    private SoundManager mySM;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    // Use this for initialization
+    void Start ()
+    {
+        mySM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,6 +25,7 @@ public class TriggerStar : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            mySM.PlayStarSound();
             Star.SetActive(false);
             StarBonus = true;
         }

@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         AudioSource = GetComponent<AudioSource>();
-        RandomTimer = Random.Range(10f,20f);
+        RandomTimer = Random.Range(15f,30f);
         StartCoroutine(PlayTimerBoulonSound());
         StartCoroutine(PlayTimerDetruireSound());
 	}

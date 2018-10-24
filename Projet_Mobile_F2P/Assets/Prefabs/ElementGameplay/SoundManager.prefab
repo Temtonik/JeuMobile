@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114293566184063616}
   m_Layer: 0
   m_Name: SoundManager
-  m_TagString: Untagged
+  m_TagString: SoundManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,3 +152,5 @@ MonoBehaviour:
   Snd_Die: {fileID: 8300000, guid: c19b2cb6474b8c2459e8d48ee678d576, type: 3}
   Snd_Laser: {fileID: 8300000, guid: 54da07e71c0519344b87841e0c286634, type: 3}
   Snd_Trap: {fileID: 8300000, guid: 4d140adf428f45e4c89ba43af7245c49, type: 3}
+  Snd_Star: {fileID: 8300000, guid: 11362b51cbbb0ad49a532099bd710b0d, type: 3}
+  Snd_Victory: {fileID: 8300000, guid: 1b3c0ac74783abb47b115321dbfead46, type: 3}

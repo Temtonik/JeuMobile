@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - DialogueManager
+  - SoundManager
+  - IGMusic
   layers:
   - Default
   - TransparentFX

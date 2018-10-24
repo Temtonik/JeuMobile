@@ -12,10 +12,11 @@ public class FinishLevel : MonoBehaviour {
     public GameObject pauseButton;
     public GameObject staminaBar;
     public GameObject canvasBoutique;
+    public SoundManager mySM;
 
     // Use this for initialization
     void Start () {
-		
+        mySM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
 	}
 	
 	// Update is called once per frame
@@ -27,7 +28,8 @@ public class FinishLevel : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            animator.SetBool("victory", true);
+            //animator.SetBool("victory", true);
+            mySM.PlayVictorySound();
             victoryCanvas.SetActive(true);
             pauseButton.SetActive(false);
             staminaBar.SetActive(false);

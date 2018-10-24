@@ -31,7 +31,7 @@ public class Dalles : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player" && my_SwapMove.is_Standing)
         {
-            animator.SetBool("button", true);
+            //animator.SetBool("button", true);
             activatedPress += 1;
             triggerPress.SetActive(false);
             //feedbackPress.SetActive(true);

@@ -13,6 +13,8 @@ public class SoundManager : MonoBehaviour {
     public AudioClip Snd_Die;
     public AudioClip Snd_Laser;
     public AudioClip Snd_Trap;
+    public AudioClip Snd_Star;
+    public AudioClip Snd_Victory;
 
     // Use this for initialization
     void Start () {
@@ -56,5 +58,19 @@ public class SoundManager : MonoBehaviour {
         AudioSource.clip = Snd_Trap;
         AudioSource.Play();
         AudioSource.loop = true;
+    }
+
+    public void PlayStarSound()
+    {
+        AudioSource.loop = false;
+        AudioSource.clip = Snd_Star;
+        AudioSource.Play();
+    }
+
+    public void PlayVictorySound()
+    {
+        AudioSource.loop = false;
+        AudioSource.clip = Snd_Victory;
+        AudioSource.Play();
     }
 }

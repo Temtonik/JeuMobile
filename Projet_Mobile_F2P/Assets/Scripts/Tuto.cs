@@ -10,9 +10,14 @@ public class Tuto : MonoBehaviour {
 
     public SwapMove my_SwapMove;
     private bool swipeDownActivated;
+    private AudioSource Audiosource;
+    public AudioClip SndGyro;
+    public AudioClip SndSwipeUp;
+    public AudioClip SndSwipeDown;
 
     // Use this for initialization
     void Start () {
+        Audiosource = GetComponent<AudioSource>();
         StartCoroutine(ShowTutoGyro());
 	}
 	
@@ -20,15 +25,16 @@ public class Tuto : MonoBehaviour {
 	void Update () {
         if (my_SwapMove.is_Moving && !swipeDownActivated)
         {
-            StartCoroutine(ShowTutoSwipeDown());
+            
             swipeDownActivated = true;
         }
 	}
 
     IEnumerator ShowTutoGyro()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.3f);
         TutoGyro.SetActive(true);
+        PlayGyroSound();
         StartCoroutine(ShowTutoSwipeUp());
 
     }
@@ -36,16 +42,18 @@ public class Tuto : MonoBehaviour {
     IEnumerator ShowTutoSwipeUp()
     {
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4.5f);
         TutoGyro.SetActive(false);
         TutoSwipeUp.SetActive(true);
+        PlaySwipeUpSound();
         StartCoroutine(HideTutoSwipeUp());
     }
 
     IEnumerator HideTutoSwipeUp()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         TutoSwipeUp.SetActive(false);
+        StartCoroutine(ShowTutoSwipeDown());
     }
 
     IEnumerator ShowTutoSwipeDown()
@@ -53,12 +61,29 @@ public class Tuto : MonoBehaviour {
         yield return new WaitForSeconds(0.5f);
         TutoSwipeUp.SetActive(false);
         TutoSwipeDown.SetActive(true);
+        PlaySwipeDownSound();
         StartCoroutine(HideTutoSwipeDown());
     }
 
     IEnumerator HideTutoSwipeDown()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(6f);
         TutoSwipeDown.SetActive(false);
+    }
+
+    void PlayGyroSound()
+    {
+        Audiosource.clip = SndGyro;
+        Audiosource.Play();
+    }
+    void PlaySwipeUpSound()
+    {
+        Audiosource.clip = SndSwipeUp;
+        Audiosource.Play();
+    }
+    void PlaySwipeDownSound()
+    {
+        Audiosource.clip = SndSwipeDown;
+        Audiosource.Play();
     }
 }

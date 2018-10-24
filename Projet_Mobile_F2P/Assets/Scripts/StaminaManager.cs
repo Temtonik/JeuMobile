@@ -58,7 +58,7 @@ public class StaminaManager : MonoBehaviour {
     {
         if(currentStamina <= 0)
         {
-            animator.SetBool("death", true);
+            //animator.SetBool("death", true);
             my_SM.PlayDieSound();
             Time.timeScale = 0;
             Defeate.SetActive(true);

@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.14581496, g: 0.13377205, b: 0.24863783, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -9826,6 +9826,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1641327668637190, guid: b415902add6c75449b09e88c1923af41, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b415902add6c75449b09e88c1923af41, type: 2}
   m_IsPrefabAsset: 0
@@ -14056,7 +14060,7 @@ MonoBehaviour:
   currentStamina: 0
   FirstStarNeedsStamina: 1
   SecondStarNeedsStamina: 3
-  ThirdStarNeedsStamina: 4
+  ThirdStarNeedsStamina: 5
   my_SwapMove: {fileID: 1203588142}
   StaminaImg: {fileID: 1624378296}
   Defeate: {fileID: 1766531509}
@@ -16357,7 +16361,10 @@ MonoBehaviour:
   TutoGyro: {fileID: 1862923121}
   TutoSwipeUp: {fileID: 1978455446}
   TutoSwipeDown: {fileID: 892110430}
-  my_SwapMove: {fileID: 0}
+  my_SwapMove: {fileID: 1203588142}
+  SndGyro: {fileID: 0}
+  SndSwipeUp: {fileID: 0}
+  SndSwipeDown: {fileID: 0}
 --- !u!1001 &2099693052
 Prefab:
   m_ObjectHideFlags: 0
