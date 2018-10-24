@@ -77,12 +77,18 @@ public class StaminaManager : MonoBehaviour {
             currentStamina = MaxStamina;
         }
 
-        if(currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
+    }
+
+    public void CheckStarsNumber()
+    {
+        Debug.Log("check stars");
+        if (currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {
             Debug.Log("Get 1st star");
             FirstStar.fillAmount = 1;
             SecondStar.fillAmount = 0;
             ThirdStar.fillAmount = 0;
+            ShopManager.Singleton.nbStar++;
         }
 
         if (currentStamina >= SecondStarNeedsStamina && currentStamina <= ThirdStarNeedsStamina)
@@ -91,22 +97,25 @@ public class StaminaManager : MonoBehaviour {
             FirstStar.fillAmount = 1;
             SecondStar.fillAmount = 1;
             ThirdStar.fillAmount = 0;
+            ShopManager.Singleton.nbStar += 2;
         }
 
-        if(currentStamina >= ThirdStarNeedsStamina)
+        if (currentStamina >= ThirdStarNeedsStamina)
         {
             Debug.Log("Get 3rd star");
             FirstStar.fillAmount = 1;
             SecondStar.fillAmount = 1;
             ThirdStar.fillAmount = 1;
+            ShopManager.Singleton.nbStar += 3;
         }
 
-        if(My_StartBonus.StarBonus)
+        if (My_StartBonus.StarBonus)
         {
             FirstStar.fillAmount = 1;
             SecondStar.fillAmount = 1;
             ThirdStar.fillAmount = 1;
             FourStar.fillAmount = 1;
+            ShopManager.Singleton.nbStar += 4;
         }
     }
 }

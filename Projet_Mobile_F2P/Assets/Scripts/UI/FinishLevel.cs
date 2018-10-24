@@ -13,11 +13,14 @@ public class FinishLevel : MonoBehaviour {
     public GameObject staminaBar;
     public GameObject canvasBoutique;
     public SoundManager mySM;
+    private StaminaManager myStaminaManager;
 
     // Use this for initialization
     void Start () {
         mySM = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
-	}
+        myStaminaManager = GameObject.FindGameObjectWithTag("StaminaManager").GetComponent<StaminaManager>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,7 +37,7 @@ public class FinishLevel : MonoBehaviour {
             Destroy(pauseButton);
             staminaBar.SetActive(false);
             canvasBoutique.SetActive(false);
-            Time.timeScale = 0f;
+            myStaminaManager.CheckStarsNumber();
         }
     }
 

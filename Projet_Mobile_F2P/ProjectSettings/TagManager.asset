@@ -8,6 +8,7 @@ TagManager:
   - DialogueManager
   - SoundManager
   - IGMusic
+  - StaminaManager
   layers:
   - Default
   - TransparentFX

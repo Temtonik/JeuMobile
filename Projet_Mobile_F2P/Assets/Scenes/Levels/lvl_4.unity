@@ -1275,7 +1275,7 @@ Prefab:
     - target: {fileID: 224881786758571772, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224345649627277360, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
@@ -1300,6 +1300,10 @@ Prefab:
         type: 2}
       propertyPath: FirstStarNeedsStamina
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098415555996494, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_TagString
+      value: StaminaManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
