@@ -5280,6 +5280,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566f086754224ae4eaf15c450f38503f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &894191561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1174021098007330, guid: 566f086754224ae4eaf15c450f38503f,
+    type: 2}
+  m_PrefabInternal: {fileID: 894191560}
 --- !u!1001 &907704893
 Prefab:
   m_ObjectHideFlags: 0
@@ -5322,6 +5327,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566f086754224ae4eaf15c450f38503f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &907704894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1174021098007330, guid: 566f086754224ae4eaf15c450f38503f,
+    type: 2}
+  m_PrefabInternal: {fileID: 907704893}
 --- !u!1001 &913261141
 Prefab:
   m_ObjectHideFlags: 0
@@ -6143,6 +6153,21 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: anim1
+      value: 
+      objectReference: {fileID: 894191561}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: simpleBasique
+      value: 
+      objectReference: {fileID: 894191561}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: animDalle
+      value: 
+      objectReference: {fileID: 894191561}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6b611a0e2aa4645983de19785b2f2b, type: 2}
   m_IsPrefabAsset: 0
@@ -6273,6 +6298,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566f086754224ae4eaf15c450f38503f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1135777036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1174021098007330, guid: 566f086754224ae4eaf15c450f38503f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135777035}
 --- !u!1001 &1137320116
 Prefab:
   m_ObjectHideFlags: 0
@@ -7704,7 +7734,6 @@ MonoBehaviour:
   LoseStamina: 2
   playerTriggered: 0
   my_SM: {fileID: 769172290}
-  animator: {fileID: 0}
 --- !u!65 &1261405250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8802,6 +8831,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566f086754224ae4eaf15c450f38503f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1419788221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1174021098007330, guid: 566f086754224ae4eaf15c450f38503f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1419788220}
 --- !u!1001 &1429476096
 Prefab:
   m_ObjectHideFlags: 0
@@ -10517,6 +10551,26 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: anim4
+      value: 
+      objectReference: {fileID: 907704894}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: dalleFeedbackSwitch
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: simpleBasique
+      value: 
+      objectReference: {fileID: 907704894}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: animDalle
+      value: 
+      objectReference: {fileID: 907704894}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6b611a0e2aa4645983de19785b2f2b, type: 2}
   m_IsPrefabAsset: 0
@@ -10649,6 +10703,26 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: dalleFeedbackSwitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: anim2
+      value: 
+      objectReference: {fileID: 1419788221}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: simpleBasique
+      value: 
+      objectReference: {fileID: 1419788221}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: animDalle
+      value: 
+      objectReference: {fileID: 1419788221}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6b611a0e2aa4645983de19785b2f2b, type: 2}
   m_IsPrefabAsset: 0
@@ -12891,6 +12965,26 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: dalleFeedbackSwitch
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: anim3
+      value: 
+      objectReference: {fileID: 1135777036}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: simpleBasique
+      value: 
+      objectReference: {fileID: 1135777036}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: animDalle
+      value: 
+      objectReference: {fileID: 1135777036}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6b611a0e2aa4645983de19785b2f2b, type: 2}
   m_IsPrefabAsset: 0
