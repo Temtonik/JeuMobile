@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextualShopActions: 5
+  contextualShopActions: 6
   ShopInGame: {fileID: 0}
 --- !u!114 &114222901247251330
 MonoBehaviour:
@@ -913,7 +913,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7ffadfaabc6b0994880c22adb2276a8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c93a0a8c80a159744a8c4cb22dc48033, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -940,7 +940,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6dd8663a6a647bb4e9ad3df08b26a546, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d119b070818bbc644a33c392c3a74fa5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -986,7 +986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextualShopActions: 6
+  contextualShopActions: 7
   ShopInGame: {fileID: 0}
 --- !u!114 &114294325355637698
 MonoBehaviour:
@@ -1206,7 +1206,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 97a4a84dd09e36844854501e31a15e38, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c93047f9d4cf1c64681af6f1dc28e984, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1410,7 +1410,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5e58475e0e44d8946a4e0d4864196446, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc6dd3cf64c919b4ea1b327615ca6bb8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37afb1f7f0578947a3319b431a90785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextualShopActions: 4
+  contextualShopActions: 5
   ShopInGame: {fileID: 0}
 --- !u!114 &114945014690744386
 MonoBehaviour:
@@ -1463,7 +1463,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fb6ac939c39e22e4d92740b6ab5ccc79, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c13945298179050418f82114a0d0ee0a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

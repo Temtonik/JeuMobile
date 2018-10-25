@@ -61,7 +61,6 @@ public class StaminaManager : MonoBehaviour {
             Time.timeScale = 0;
             Defeate.SetActive(true);
             pauseButton.SetActive(false);
-            staminaBar.SetActive(false);
         }
 
         if(currentStamina == 3)

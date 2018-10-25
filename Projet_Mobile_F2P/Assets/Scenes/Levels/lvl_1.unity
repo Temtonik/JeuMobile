@@ -2411,7 +2411,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+    - target: {fileID: 114527048113731570, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: my_SwapMove
+      value: 
+      objectReference: {fileID: 1993429491}
+    - target: {fileID: 114327888475348760, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2421,16 +2426,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573375378}
-    - target: {fileID: 114327888475348760, guid: d550841049b96d843ab195cc7fa5c3c2,
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 573375378}
-    - target: {fileID: 114527048113731570, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: my_SwapMove
-      value: 
-      objectReference: {fileID: 1993429491}
     - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: my_SwapMove

@@ -14785,7 +14785,7 @@ Prefab:
     - target: {fileID: 114456864956948250, guid: c36687dd975cd4548971335f4d79f429,
         type: 2}
       propertyPath: my_LS.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4586008390036392, guid: c36687dd975cd4548971335f4d79f429, type: 2}
       propertyPath: m_LocalPosition.x
@@ -14845,22 +14845,22 @@ Prefab:
         type: 2}
       propertyPath: my_LS.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1740426909}
     - target: {fileID: 114456864956948250, guid: c36687dd975cd4548971335f4d79f429,
         type: 2}
       propertyPath: my_LS.Array.data[1]
       value: 
-      objectReference: {fileID: 1740426909}
+      objectReference: {fileID: 1353445480}
     - target: {fileID: 114456864956948250, guid: c36687dd975cd4548971335f4d79f429,
         type: 2}
       propertyPath: my_LS.Array.data[2]
       value: 
-      objectReference: {fileID: 1353445480}
+      objectReference: {fileID: 420940276}
     - target: {fileID: 114456864956948250, guid: c36687dd975cd4548971335f4d79f429,
         type: 2}
       propertyPath: my_LS.Array.data[3]
       value: 
-      objectReference: {fileID: 420940276}
+      objectReference: {fileID: 622513962}
     - target: {fileID: 114456864956948250, guid: c36687dd975cd4548971335f4d79f429,
         type: 2}
       propertyPath: my_LS.Array.data[4]

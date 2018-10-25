@@ -39,20 +39,31 @@ public class ShopManager : MonoBehaviour {
 
     public void Action()
     {
-        actionBought += 5;
-        nbStar-- ;
+        if (nbStar >= 1)
+        {
+            actionBought += 5;
+            nbStar--;
+        }
+
     }
 
     public void MoreAction()
     {
-        actionBought += 10;
-        nbStar -= 2;
+        if (nbStar >= 2)
+        {
+            actionBought += 10;
+            nbStar -= 2;
+        }
     }
 
     public void Life()
     {
-        lifeBought += 1;
-        nbStar-- ;
+        if (nbStar >= 1)
+        {
+            lifeBought += 1;
+            nbStar--;
+        }
+
     }
 
     public void Skin1()
