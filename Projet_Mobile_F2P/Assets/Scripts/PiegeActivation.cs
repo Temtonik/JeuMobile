@@ -11,8 +11,6 @@ public class PiegeActivation : MonoBehaviour {
     public SoundManager my_SM;
     private DialogueManager myDM;
 
-    public Animator animator;
-
 
     // Use this for initialization
     void Start() {
@@ -28,7 +26,6 @@ public class PiegeActivation : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player" && !playerTriggered) 
         {
-            //animator.SetBool("electricity", true);
             myDM.PlayAieSound();
             playerTriggered = true;
             electricTrapAnim.SetActive(true);

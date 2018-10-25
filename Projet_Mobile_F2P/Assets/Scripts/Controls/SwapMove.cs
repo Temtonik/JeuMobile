@@ -7,8 +7,6 @@ public class SwapMove : MonoBehaviour
 
     public GameObject Player;
 
-    public Animator animator;
-
     private Vector3 fp;   //First touch position
     private Vector3 lp;   //Last touch position
     private Vector3 newPos = new Vector3();
@@ -87,7 +85,6 @@ public class SwapMove : MonoBehaviour
                     is_Moving = true;
                     is_acting = true;
                     my_SM.PlaySwipeSound();
-                    //animator.SetBool("jump", true);
 
                     if (Player.transform.rotation.eulerAngles.y >= 0 && Player.transform.rotation.eulerAngles.y <= 30 || Player.transform.rotation.eulerAngles.y >= 330 && Player.transform.rotation.eulerAngles.y <= 360)
                     {
@@ -151,7 +148,6 @@ public class SwapMove : MonoBehaviour
                     is_Standing = true;
                     is_acting = true;
                     my_SM.PlayStaySound();
-                    //animator.SetBool("stay", true);
 
                     for (int i = 0; i <= my_LS.Length; i++)
                     {

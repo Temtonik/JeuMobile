@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class FinishLevel : MonoBehaviour {
 
     public string nextLevel;
-    public Animator animator;
 
     public GameObject victoryCanvas;
     public GameObject pauseButton;
@@ -31,7 +30,6 @@ public class FinishLevel : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            //animator.SetBool("victory", true);
             mySM.PlayVictorySound();
             victoryCanvas.SetActive(true);
             Destroy(pauseButton);
