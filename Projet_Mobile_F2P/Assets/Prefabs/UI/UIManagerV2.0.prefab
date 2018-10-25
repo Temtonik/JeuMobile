@@ -333,7 +333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1197920630563730
 GameObject:
   m_ObjectHideFlags: 1
@@ -3857,7 +3857,11 @@ MonoBehaviour:
   canvasDefeatStamina: {fileID: 1416072306027468}
   pauseButton: {fileID: 1581769632576868}
   canvasBoutique: {fileID: 1182984968510306}
+  shopButton: {fileID: 0}
+  lifeButton: {fileID: 0}
   my_SM: {fileID: 114471545336125368}
+  my_LS: {fileID: 0}
+  laser1: {fileID: 0}
 --- !u!114 &114777414799193052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5318,8 +5322,8 @@ RectTransform:
   m_Father: {fileID: 224084821371925988}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.64625007, y: 0.33005893}
-  m_AnchorMax: {x: 0.8537501, y: 0.40662023}
+  m_AnchorMin: {x: 0.5827933, y: 0.3036637}
+  m_AnchorMax: {x: 0.88272965, y: 0.44621313}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5503,8 +5507,8 @@ RectTransform:
   m_Father: {fileID: 224084821371925988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.12431513, y: 0.3126807}
-  m_AnchorMax: {x: 0.40912706, y: 0.43821734}
+  m_AnchorMin: {x: 0.121671066, y: 0.31433037}
+  m_AnchorMax: {x: 0.406483, y: 0.43986702}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

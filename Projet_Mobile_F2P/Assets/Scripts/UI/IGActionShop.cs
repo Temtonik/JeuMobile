@@ -29,11 +29,11 @@ public class IGActionShop : MonoBehaviour {
 
     public void CanvasBonus()
     {
+        canvasBonus.SetActive(true);
+        canvasBoutique.SetActive(true);
         if (pauseButton != null)
         {
-            canvasBonus.SetActive(true);
             pauseButton.SetActive(false);
-            canvasBoutique.SetActive(true);
         }
     }
 
@@ -47,8 +47,11 @@ public class IGActionShop : MonoBehaviour {
         if (pauseButton != null)
         {
             canvasBonus.SetActive(false);
-            pauseButton.SetActive(true);
             canvasBoutique.SetActive(false);
+            if (pauseButton != null)
+            {
+                pauseButton.SetActive(true);
+            }
         }
     }
 
