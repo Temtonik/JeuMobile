@@ -11418,7 +11418,7 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+    - target: {fileID: 114327888475348760, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -11428,7 +11428,7 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1051549785}
-    - target: {fileID: 114327888475348760, guid: d550841049b96d843ab195cc7fa5c3c2,
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -11448,61 +11448,11 @@ Prefab:
       propertyPath: My_StartBonus
       value: 
       objectReference: {fileID: 390258341}
-    - target: {fileID: 1182984968510306, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098415555996494, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_TagString
-      value: StaminaManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 1702957422309232, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1702957422309232, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_TagString
-      value: Pub
-      objectReference: {fileID: 0}
-    - target: {fileID: 114922177982331948, guid: d550841049b96d843ab195cc7fa5c3c2,
+    - target: {fileID: 224406099451118128, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: bcf661175667c1447b029a747b22cc95,
-        type: 3}
-    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: MaxStamina
-      value: 16
+      propertyPath: m_AnchoredPosition.y
+      value: -0.35461426
       objectReference: {fileID: 0}
-    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: FirstStarNeedsStamina
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: SecondStarNeedsStamina
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: ThirdStarNeedsStamina
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1826984843461328, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1308738072309928, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114662543989340730, guid: d550841049b96d843ab195cc7fa5c3c2,
-        type: 2}
-      propertyPath: SndLaser
-      value: 
-      objectReference: {fileID: 8300000, guid: 4ee4e34466856b74d928aa4140b391e9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
