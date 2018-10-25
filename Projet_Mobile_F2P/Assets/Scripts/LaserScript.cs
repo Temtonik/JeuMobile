@@ -69,7 +69,7 @@ void Update () {
     IEnumerator WaitForKill()
     {
         yield return new WaitForSeconds(0.3f);
-        my_StaminaManager.currentStamina = 0;
+        my_StaminaManager.currentStamina = -1;
         my_StaminaManager.ShowStamina();
         my_StaminaManager.CheckActualStamina();
         staminaBar.SetActive(false);

@@ -54,7 +54,7 @@ public class StaminaManager : MonoBehaviour {
 
     public void CheckActualStamina()
     {
-        if(currentStamina <= 0)
+        if(currentStamina < 0)
         {
             currentStamina = 0;
             my_SM.PlayDieSound();
@@ -78,7 +78,7 @@ public class StaminaManager : MonoBehaviour {
 
     public void CheckStarsNumber()
     {
-        Debug.Log("check stars");
+        Time.timeScale = 0;
         if (currentStamina >= FirstStarNeedsStamina && currentStamina <= SecondStarNeedsStamina)
         {
             Debug.Log("Get 1st star");

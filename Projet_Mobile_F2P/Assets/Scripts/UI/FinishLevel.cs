@@ -11,7 +11,7 @@ public class FinishLevel : MonoBehaviour {
     public GameObject pauseButton;
     public GameObject staminaBar;
     public GameObject canvasBoutique;
-    public SoundManager mySM;
+    private SoundManager mySM;
     private StaminaManager myStaminaManager;
 
     // Use this for initialization
