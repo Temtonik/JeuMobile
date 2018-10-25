@@ -1592,6 +1592,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f3f7d8691fe6e4abceef6f0ea55a27, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &573375378 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114702351155103792, guid: d7f3f7d8691fe6e4abceef6f0ea55a27,
+    type: 2}
+  m_PrefabInternal: {fileID: 573375377}
+  m_Script: {fileID: 11500000, guid: 657773ce6517e154286ed3caefa42768, type: 3}
 --- !u!1001 &578621206
 Prefab:
   m_ObjectHideFlags: 0
@@ -2240,6 +2246,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566f086754224ae4eaf15c450f38503f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &766877579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1174021098007330, guid: 566f086754224ae4eaf15c450f38503f,
+    type: 2}
+  m_PrefabInternal: {fileID: 766877578}
 --- !u!1001 &786379276
 Prefab:
   m_ObjectHideFlags: 0
@@ -2420,6 +2431,44 @@ Prefab:
       propertyPath: My_StartBonus
       value: 
       objectReference: {fileID: 1686940602}
+    - target: {fileID: 1182984968510306, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1920351214321918, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114327888475348760, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 573375378}
+    - target: {fileID: 114327888475348760, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToNextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 573375378}
+    - target: {fileID: 114400395000042332, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 114669500352205912, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 573375378}
+    - target: {fileID: 114669500352205912, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0
@@ -5967,6 +6016,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.35148165
       objectReference: {fileID: 0}
+    - target: {fileID: 114754456948532490, guid: fa6b611a0e2aa4645983de19785b2f2b,
+        type: 2}
+      propertyPath: animDalle
+      value: 
+      objectReference: {fileID: 766877579}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6b611a0e2aa4645983de19785b2f2b, type: 2}
   m_IsPrefabAsset: 0
