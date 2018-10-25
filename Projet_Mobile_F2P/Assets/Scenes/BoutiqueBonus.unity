@@ -597,6 +597,24 @@ Prefab:
       propertyPath: m_FontData.m_MaxSize
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 114088740514960064, guid: 4415f2c280d702248a241fc8a7b43d98,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eefb316b79df93e498b9c6d01e397c74,
+        type: 3}
+    - target: {fileID: 114212255393723526, guid: 4415f2c280d702248a241fc8a7b43d98,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34633108b79d4784a847d5572c7960b1,
+        type: 3}
+    - target: {fileID: 114268770433660886, guid: 4415f2c280d702248a241fc8a7b43d98,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ee94d1de61af394785ee72eb923e2db,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4415f2c280d702248a241fc8a7b43d98, type: 2}
   m_IsPrefabAsset: 0
