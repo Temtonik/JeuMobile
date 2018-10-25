@@ -24,13 +24,13 @@ public class Tuto3 : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.3f);
         TutoPiege.SetActive(true);
-        //PlayPiegeSound();
+        PlayPiegeSound();
         StartCoroutine(HideTutoPiege());
     }
 
     IEnumerator HideTutoPiege()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(7f);
         TutoPiege.SetActive(false);
     }
 

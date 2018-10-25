@@ -4684,7 +4684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TutoPiege: {fileID: 988287586}
-  SndPiege: {fileID: 0}
+  SndPiege: {fileID: 8300000, guid: 5270d175862d70c41b7d0e3d1995f079, type: 3}
 --- !u!82 &775738239
 AudioSource:
   m_ObjectHideFlags: 0

@@ -24,13 +24,13 @@ public class Tuto2 : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.3f);
         TutoLaser.SetActive(true);
-        //PlayLaserSound();
+        PlayLaserSound();
         StartCoroutine(HideTutoLaser());
     }
 
     IEnumerator HideTutoLaser()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4.5f);
         TutoLaser.SetActive(false);
     }
 
