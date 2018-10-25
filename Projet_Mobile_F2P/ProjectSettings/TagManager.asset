@@ -10,6 +10,7 @@ TagManager:
   - IGMusic
   - StaminaManager
   - ParticuleDalle
+  - Pub
   layers:
   - Default
   - TransparentFX

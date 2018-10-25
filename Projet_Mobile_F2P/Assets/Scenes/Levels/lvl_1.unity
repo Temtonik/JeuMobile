@@ -3179,6 +3179,11 @@ Prefab:
       propertyPath: m_TagString
       value: StaminaManager
       objectReference: {fileID: 0}
+    - target: {fileID: 114527048113731570, guid: d550841049b96d843ab195cc7fa5c3c2,
+        type: 2}
+      propertyPath: my_SwapMove
+      value: 
+      objectReference: {fileID: 1993429491}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
   m_IsPrefabAsset: 0

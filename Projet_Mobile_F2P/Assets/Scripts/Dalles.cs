@@ -24,7 +24,8 @@ public class Dalles : MonoBehaviour {
     public GameObject anim4;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         activatedPress = 0;
 
         switch (dalleFeedbackSwitch)
@@ -45,6 +46,7 @@ public class Dalles : MonoBehaviour {
                 anim4.SetActive(false);
                 break;
         }
+    }
 	
 	// Update is called once per frame
 	void Update () {

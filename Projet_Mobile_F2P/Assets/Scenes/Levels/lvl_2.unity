@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14581496, g: 0.13377205, b: 0.24863783, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11440,6 +11440,14 @@ Prefab:
     - target: {fileID: 1098415555996494, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
       propertyPath: m_TagString
       value: StaminaManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702957422309232, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702957422309232, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
+      propertyPath: m_TagString
+      value: Pub
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
