@@ -13,7 +13,8 @@ public class LaserScript : MonoBehaviour {
     public SoundManager my_SM;
     public StaminaManager my_StaminaManager;
 
-    public GameObject staminaBar;
+    public GameObject lifeButton;
+    public GameObject shopButton;
 
     // Use this for initialization
     void Start () {
@@ -36,13 +37,9 @@ void Update () {
         }
         else if (actionBeforeLaserActive == 0)
         {
-            //StartCoroutine(WaitForActive());
-            //laserAnim.SetActive(true);
-            //my_BC.isTrigger = true;
             currentTimer--;
             if(currentTimer == 0)
             {
-                //my_SM.PlayLaserSound();
                 laserAnim.SetActive(true);
                 my_BC.isTrigger = true;
                 currentTimer = 0;
@@ -61,7 +58,6 @@ void Update () {
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("I'm in the laser");
             StartCoroutine(WaitForKill());
         }
     }
@@ -72,6 +68,7 @@ void Update () {
         my_StaminaManager.currentStamina = -1;
         my_StaminaManager.ShowStamina();
         my_StaminaManager.CheckActualStamina();
-        staminaBar.SetActive(false);
+        shopButton.SetActive(false);
+        lifeButton.SetActive(true);
     }
 }

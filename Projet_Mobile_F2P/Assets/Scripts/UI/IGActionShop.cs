@@ -10,8 +10,12 @@ public class IGActionShop : MonoBehaviour {
     public GameObject canvasDefeatStamina;
     public GameObject pauseButton;
     public GameObject canvasBoutique;
+    public GameObject shopButton;
+    public GameObject lifeButton;
 
     public StaminaManager my_SM;
+    public LaserScript my_LS;
+    public GameObject laser1;
 
     // Use this for initialization
     void Start () {
@@ -66,6 +70,25 @@ public class IGActionShop : MonoBehaviour {
             canvasBonus.SetActive(false);
             canvasBoutique.SetActive(false);
             pauseButton.SetActive(true);
+            Time.timeScale = 1f;
+        }
+
+    }
+
+    public void UseLife()
+    {
+        if (ShopManager.Singleton.lifeBought >= 1)
+        {
+            ShopManager.Singleton.lifeBought -= 1;
+            my_SM.currentStamina += 25;
+            my_SM.ShowStamina();
+            my_SM.CheckActualStamina();
+            canvasDefeatStamina.SetActive(false);
+            lifeButton.SetActive(false);
+            pauseButton.SetActive(true);
+            shopButton.SetActive(true);
+            my_LS.actionBeforeLaserActive = 1;
+            laser1.SetActive(false);
             Time.timeScale = 1f;
         }
 
