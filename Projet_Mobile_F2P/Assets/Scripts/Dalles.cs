@@ -12,15 +12,39 @@ public class Dalles : MonoBehaviour {
     public Animator animator;
 
     public GameObject triggerPress;
-    //public GameObject feedbackPress;
-
     public GameObject[] door;
     public GameObject[] PassageCollidersDoor;
 
-	// Use this for initialization
-	void Start () {
+    public enum DalleFeedback { FirstDoor, SecondDoor, ThirdDoor, FourthDoor }
+    public DalleFeedback dalleFeedbackSwitch;
+
+    public GameObject anim1;
+    public GameObject anim2;
+    public GameObject anim3;
+    public GameObject anim4;
+
+    // Use this for initialization
+    void Start () {
         activatedPress = 0;
-	}
+
+        switch (dalleFeedbackSwitch)
+        {
+            case DalleFeedback.FirstDoor:
+                anim1.SetActive(false);
+                break;
+
+            case DalleFeedback.SecondDoor:
+                anim2.SetActive(false);
+                break;
+
+            case DalleFeedback.ThirdDoor:
+                anim3.SetActive(false);
+                break;
+
+            case DalleFeedback.FourthDoor:
+                anim4.SetActive(false);
+                break;
+        }
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,6 +63,7 @@ public class Dalles : MonoBehaviour {
             DoorActive();
         }
     }
+
 
     void DoorActive()
     {
