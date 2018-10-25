@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 199611862076125652}
   m_Layer: 0
   m_Name: Particule_dalle
-  m_TagString: Untagged
+  m_TagString: ParticuleDalle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

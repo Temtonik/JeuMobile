@@ -3137,7 +3137,7 @@ Prefab:
       objectReference: {fileID: 1686940602}
     - target: {fileID: 1662401212846678, guid: d550841049b96d843ab195cc7fa5c3c2, type: 2}
       propertyPath: m_Name
-      value: UIManagerV2.0 (1)
+      value: UIManagerV2.0
       objectReference: {fileID: 0}
     - target: {fileID: 114471545336125368, guid: d550841049b96d843ab195cc7fa5c3c2,
         type: 2}

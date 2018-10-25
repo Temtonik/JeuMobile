@@ -9,6 +9,7 @@ TagManager:
   - SoundManager
   - IGMusic
   - StaminaManager
+  - ParticuleDalle
   layers:
   - Default
   - TransparentFX
